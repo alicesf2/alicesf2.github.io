@@ -1,43 +1,118 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="assets/bootstrap/jquery/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <title>Alice Fang</title>
-  </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Alice Fang</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <script src="assets/bootstrap/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <title>Alice Fang</title>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#about">Alice Fang</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav nav-pills ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#activities">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#honors">Honors</a>
             <li class="nav-item">
-              <a class="nav-link" href="experience.html">Experience</a>
+              <a class="nav-link" href="#interests">Interests</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="education.html">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="activities.html">Activities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="honors.html">Honors</a>
-            <li class="nav-item">
-              <a class="nav-link" href="interests.html">Interests</a>
-            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Experience-->
+  <div data-spy="scroll" data-target="#mainNavbar" data-offset="0">
+    <h3 id="experience">Experience</h3>
+    <h4>Software Development Intern</h4>
+    <h5>Productive Edge</h5>
+    <p>
+      <ul>
+        <li>Assist in building proof of concepts and developing augmented reality apps using Swift, Java, and JavaScript</li>
+        <li>Collaborate with a team of 4 interns for an upcoming machine learning project</li>
+        <li>Researched open source content management systems for digital signage in real estate</li>
+        <li>Researched software to design and control pathways for drone light shows</li>
+      </ul>
+    </p>
+    <h4>Web Developer</h4>
+    <h5>Fenghua Academy</h5>
+    <p>
+      <ul>
+        <li>Refine school communication by creating a portal where administrators can send mass emails and update school news</li>
+        <li>Redesign the layout and aesthetic of the website using Bootstrap</li>
+        <li>Maintain the website content by updating old links, photos, and news</li>
+      </ul>
+    </p>
+    <h4>Data Analytics Job Shadow</h4>
+    <h5>Caterpillar Inc.</h5>
+    <p>
+      <ul>
+        <li>Acquired knowledge of data analysis techniques and applied them to a sample dataset</li>
+        <li>Gained insight into data visualization technologies such as Tableau</li>
+        <li>Learned about project management methodologies such as Agile/Scrum</li>
+      </ul>
+    </p>
+    <h3 id="skills">Skills</h3>
+    <div class="row">
+      <!--Card 1: Programming Languages-->
+      <div class="col-lg-4">
+        <div class="card mx-auto" style="width: 18rem;">
+          <div class="card-header">Programming Languages</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Java</li>
+            <li class="list-group-item">Python</li>
+            <li class="list-group-item">C++</li>
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">JavaScript</li>
           </ul>
         </div>
       </div>
-    </nav>
-  </body>
+      <!--Card 2: Industry Skills-->
+      <div class="col-lg-4">
+        <div class="card mx-auto" style="width: 18rem;">
+          <div class="card-header">Industry Skills</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Web Development</li>
+            <li class="list-group-item">Augmented Reality</li>
+            <li class="list-group-item">Natural Language Processing</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Card 3: Tools & Technologies-->
+      <div class="col-lg-4">
+        <div class="card mx-auto" style="width: 18rem;">
+          <div class="card-header">Tools & Technologies</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Unity</li>
+            <li class="list-group-item">Git/GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
