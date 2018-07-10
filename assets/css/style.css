@@ -1,7 +1,12 @@
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
 body {
   padding-top: 70px;
-  padding-left: auto;
-  padding-right: auto;
+
 }
 
 h3 {
@@ -10,4 +15,8 @@ h3 {
 
 .card-header {
   font-weight: bold;
+}
+
+.container {
+  min-width: 500px;
 }
