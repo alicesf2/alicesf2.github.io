@@ -4,16 +4,8 @@
     padding-left: 5px;
     padding-right: 5px;
   }
-
-  .card-img-top {
-    height: 100px;
-  }
 }
 
-body {
-  padding-top: 70px;
-
-}
 
 h2 {
   text-align: center;
@@ -27,5 +19,17 @@ h2 {
 
 .card-img-top {
   object-fit: cover;
-  height: 20vw;
+  height: 250px;
+}
+
+.experience {
+  background-image: url("../img/chicago.jpg");
+}
+
+.container-fluid {
+  padding-bottom: 20px;
+}
+
+#experience {
+  color: white;
 }
