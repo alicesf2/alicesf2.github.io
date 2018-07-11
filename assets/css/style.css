@@ -2,6 +2,11 @@
   body {
     padding-top: 56px;
   }
+
+  .cover {
+    height: 100vh;
+  }
+
 }
 
 html, body {
@@ -41,6 +46,7 @@ h2 {
 .nav-link {
   color: white !important;
 }
+
 .about {
   background: #00C9FF;
   /* fallback for old browsers */
