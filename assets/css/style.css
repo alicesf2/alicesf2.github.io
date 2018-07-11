@@ -29,9 +29,10 @@ h2 {
 }
 
 .container-fluid {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 50px;
 }
 
 .navbar {
