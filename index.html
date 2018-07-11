@@ -13,14 +13,17 @@
 </head>
 
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="mainNavbar">
+  <nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#about">Alice Fang</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="nav nav-pills ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#interests">Interests</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#experience">Experience</a>
           </li>
@@ -31,94 +34,286 @@
             <a class="nav-link" href="#education">Education</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#courses">Courses</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#activities">Activities</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#volunteering">Volunteering</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#honors">Honors</a>
-            <li class="nav-item">
-              <a class="nav-link" href="#interests">Interests</a>
-            </li>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!--Experience-->
-  <div class="container-fluid">
-    <div data-spy="scroll" data-target="#mainNavbar" data-offset="0">
-      <h3 id="experience">Experience</h3>
-      <div class="experience">
-      <h4>Software Development Intern</h4>
-      <h5>Productive Edge</h5>
-      <p>
-        <ul>
-          <li>Assist in building proof of concepts and developing augmented reality apps using Swift, Java, and JavaScript</li>
-          <li>Collaborate with a team of 4 interns for an upcoming machine learning project</li>
-          <li>Researched open source content management systems for digital signage in real estate</li>
-          <li>Researched software to design and control pathways for drone light shows</li>
-        </ul>
-      </p>
-      <h4>Web Developer</h4>
-      <h5>Fenghua Academy</h5>
-      <p>
-        <ul>
-          <li>Refine school communication by creating a portal where administrators can send mass emails and update school news</li>
-          <li>Redesign the layout and aesthetic of the website using Bootstrap</li>
-          <li>Maintain the website content by updating old links, photos, and news</li>
-        </ul>
-      </p>
-      <h4>Data Analytics Job Shadow</h4>
-      <h5>Caterpillar Inc.</h5>
-      <p>
-        <ul>
-          <li>Acquired knowledge of data analysis techniques and applied them to a sample dataset</li>
-          <li>Gained insight into data visualization technologies such as Tableau</li>
-          <li>Learned about project management methodologies such as Agile/Scrum</li>
-        </ul>
-      </p>
-    </div>
-      <h3 id="skills">Skills</h3>
-      <div class="skills">
-        <div class="row">
-          <!--Card 1: Programming Languages-->
-          <div class="col-lg-4">
-            <div class="card mx-auto text-center">
-              <div class="card-header">Programming Languages</div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Java</li>
-                <li class="list-group-item">Python</li>
-                <li class="list-group-item">C++</li>
-                <li class="list-group-item">HTML</li>
-                <li class="list-group-item">CSS</li>
-                <li class="list-group-item">JavaScript</li>
-              </ul>
-            </div>
-          </div>
-          <!--Card 2: Industry Skills-->
-          <div class="col-lg-4">
-            <div class="card mx-auto text-center">
-              <div class="card-header">Industry Skills</div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Web Development</li>
-                <li class="list-group-item">Augmented Reality</li>
-                <li class="list-group-item">Natural Language Processing</li>
-              </ul>
-            </div>
-          </div>
 
-          <!--Card 3: Tools & Technologies-->
-          <div class="col-lg-4">
-            <div class="card mx-auto text-center">
-              <div class="card-header">Tools & Technologies</div>
+  <!--Content Section-->
+  <div class="container-fluid">
+
+    <!--Experience Section-->
+    <div class="experience" data-spy="scroll" data-target="#mainNavbar" data-offset="0">
+      <h2 id="experience">Experience</h2>
+
+      <!--Card 1: Productive Edge-->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Software Development Intern</div>
+            <div class="card-body">
+              <h4>Productive Edge</h4>
+              <h5>Chicago, IL</h5>
+              <h6>May 2018 - Present</h6>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Unity</li>
-                <li class="list-group-item">Git/GitHub</li>
+                <li class="list-group-item">Assist in building proof of concepts and developing augmented reality apps using Swift, Java, and JavaScript</li>
+                <li class="list-group-item">Collaborate with a team of 4 interns for an upcoming machine learning project</li>
+                <li class="list-group-item">Researched open source content management systems for digital signage in real estate</li>
+                <li class="list-group-item">Researched software to design and control pathways for drone light shows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--Card 2: Fenghua Academy-->
+        <div class="col-lg-4">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Assistant Web Developer</div>
+            <div class="card-body">
+              <h4>Fenghua Academy</h4>
+              <h5>Lake Zurich, IL</h5>
+              <h6>May 2018 - Present</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Refine school communication by creating a portal where administrators can send mass emails and update school news</li>
+                <li class="list-group-item">Redesign the layout and aesthetic of the website using Bootstrap</li>
+                <li class="list-group-item">Maintain the website content by updating old links, photos, and news</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <!--Card 3: Caterpillar-->
+        <div class="col-lg-4">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Data Analytics Job Shadow</div>
+            <div class="card-body">
+              <h4>Caterpillar</h4>
+              <h5>Peoria, IL</h5>
+              <h6>Apr 2018</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Acquired knowledge of data analysis techniques and applied them to a sample dataset</li>
+                <li class="list-group-item">Gained insight into data visualization technologies such as Tableau</li>
+                <li class="list-group-item">Learned about project management methodologies such as Agile/Scrum</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <!--Skills Section-->
+    <div class="skills" data-spy="scroll" data-target="#mainNavbar" data-offset="0">
+      <h2 id="skills">Skills</h2>
+      <div class="row">
+
+        <!--Card 1: Programming Languages-->
+        <div class="col-lg-4">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Programming Languages</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Java</li>
+              <li class="list-group-item">Python</li>
+              <li class="list-group-item">C++</li>
+              <li class="list-group-item">HTML</li>
+              <li class="list-group-item">CSS</li>
+              <li class="list-group-item">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Card 2: Industry Skills-->
+        <div class="col-lg-4">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Industry Skills</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Web Development</li>
+              <li class="list-group-item">Mobile Development</li>
+              <!-- <li class="list-group-item">Data Science</li> -->
+              <li class="list-group-item">Augmented Reality</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Card 3: Tools & Technologies-->
+        <div class="col-lg-4">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Tools & Technologies</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Unity</li>
+              <li class="list-group-item">GitHub</li>
+              <li class="list-group-item">Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Education Section-->
+    <div class="education" data-spy="scroll" data-target="#mainNavbar" data-offset="0">
+      <h2 id="education">Education</h2>
+      <div class="row">
+
+        <!--Bachelors-->
+        <div class="col-lg-6">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">University of Illinois</div>
+            <img class="card-img-top" src="assets/img/uiuc.jpg">
+            <div class="card-body">
+              <h5>Urbana-Champaign, IL</h5>
+              <h6>May 2021</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Bachelor of Science - Computer Science</li>
+                <li class="list-group-item">Minor - Statistics</li>
+                <li class="list-group-item">GPA: 3.24/4.00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--High School-->
+        <div class="col-lg-6">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Adlai E. Stevenson High School</div>
+            <img class="card-img-top" src="assets/img/shs.jpg">
+            <div class="card-body">
+              <h5>Lincolnshire, IL</h5>
+              <h6>May 2017</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Weighted GPA: 4.63/5.00</li>
+                <li class="list-group-item">Unweighted GPA: 3.85/4.00</li>
+                <li class="list-group-item">ACT: 35/36</li>
+                <li class="list-group-item">SAT: 1520/1600</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Course Section-->
+    <div class="courses" data-spy="scroll" data-target="#mainNavbar" data-offset="0">
+      <h2 id="courses">Courses</h2>
+      <div class="row">
+
+        <!--Card 1: Freshman-->
+        <div class="col-lg-3">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Freshman</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">CS 125: Intro to Computer Science</li>
+              <li class="list-group-item">CS 126: Software Design Studio</li>
+              <li class="list-group-item">CS 173: Discrete Structures</li>
+              <li class="list-group-item">CS 196: Intro to Data Science</li>
+              <li class="list-group-item">MATH 415: Applied Linear Algebra</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Card 1: Sophomore-->
+        <div class="col-lg-3">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Sophomore</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">CS 225: Data Structures</li>
+              <li class="list-group-item">CS 233: Computer Architecture</li>
+              <li class="list-group-item">CS 241: System Programming</li>
+              <li class="list-group-item">CS 411: Database Systems</li>
+              <li class="list-group-item">STAT 200: Statistical Analysis</li>
+              <li class="list-group-item">STAT 400: Statistics & Probability I</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Card 1: Junior-->
+        <div class="col-lg-3">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Junior</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">CS 357: Numerical Methods I</li>
+              <li class="list-group-item">CS 374: Intro to Algorithms & Models of Computation</li>
+              <li class="list-group-item">CS 425: Distributed Systems</li>
+              <li class="list-group-item">CS 433: Computer Systems Organization</li>
+              <li class="list-group-item">STAT 420: Methods of Applied Statistics</li>
+              <li class="list-group-item">STAT 430: Topics in Applied Statistics</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Card 1: Senior-->
+        <div class="col-lg-3">
+          <div class="card mx-auto text-center h-100">
+            <div class="card-header">Senior</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">CS 421: Programming Languages & Compilers</li>
+              <li class="list-group-item">CS 427: Software Engineering I</li>
+              <li class="list-group-item">CS 428: Software Engineering II</li>
+              <li class="list-group-item">CS 440: Artificial Intelligence</li>
+              <li class="list-group-item">CS 460: Security Laboratory</li>
+              <li class="list-group-item">CS 498: Virtual Reality</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <!--Activities Section-->
+      <div class="activities" data-spy="scroll" data-target="#mainNavbar" data-offset="0">
+        <h2 id="activities">Activities</h2>
+        <h3>Women in Computer Science</h3>
+        <h4>Head of Infrastructure</h4>
+        <h5>Sep 2017 - Present</h5>
+        <p>
+          <ul>
+            <li>Aid in the development of a point tracking system to record member participation</li>
+            <li>Fix display, navigation, and functionality issues with the organization website</li>
+            <li>Update website content such as officer bios, pictures, and upcoming events</li>
+          </ul>
+        </p>
+        <h3>Asian American Association</h3>
+        <h4>Scene Coordinator</h4>
+        <h5>Sep 2017 - Present</h5>
+        <p>
+          <ul>
+            <li>Contributed to the production of one of the university's largest dance and cultural showcases, historically attended by 500+ people</li>
+            <li>Led the opening dance piece of the show</li>
+          </ul>
+        </p>
+      </div>
+
+      <!--Volunteer Section-->
+      <div class="volunteering" data-spy="scroll" data-target="#mainNavbar" data-offset="0">
+        <h2 id="volunteering">Volunteering</h2>
+        <h3>Introduction to GitHub Teacher</h3>
+        <h4>CS @ Illinois SAIL</h4>
+        <h5>Apr 2018</h5>
+        <p>
+          <ul>
+            <li>Explained version control and open source concepts to a class of 15 high school students</li>
+            <li>Demonstrated basic command line and Git Bash functions such as pushing, pulling and branching</li>
+            <li>Encouraged students to create and collaborate with others on their own projects</li>
+          </ul>
+        </p>
+      </div>
+
+      <!--Honors Section-->
+      <div class="honors" data-spy="scroll" data-target="#mainNavbar" data-offset="0">
+        <h2 id="honors">Honors & Awards</h2>
+        <h3>James Scholar in Engineering</h3>
+        <h5>Jan 2018</h5>
+      </div>
+    </div>
 </body>
 
 </html>

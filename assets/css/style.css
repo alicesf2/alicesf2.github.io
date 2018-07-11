@@ -4,6 +4,10 @@
     padding-left: 5px;
     padding-right: 5px;
   }
+
+  .card-img-top {
+    height: 100px;
+  }
 }
 
 body {
@@ -11,14 +15,17 @@ body {
 
 }
 
-h3 {
+h2 {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .card-header {
   font-weight: bold;
 }
 
-.container {
-  min-width: 500px;
+.card-img-top {
+  object-fit: cover;
+  height: 20vw;
 }
