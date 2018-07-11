@@ -4,20 +4,14 @@
   }
 }
 
-body {
-  background: #0f0c29;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+html, body {
+  height: 100%;
 }
 
 h2 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: white;
 }
 
 .card-header {
@@ -30,34 +24,56 @@ h2 {
 }
 
 .container-fluid {
-  padding-bottom: 20px;
+  padding-top: 20px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-a {
-  color: white;
-}
-
-li.active a {
-  color: white;
-  background-color: #1D1E42;
-}
-
-.navbar-dark {
-  background: #0f0c29;
+.navbar {
+  background: #00C9FF;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #92FE9D, #00C9FF);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.scroll-adjust {
-  padding-top: 40px;
-  margin-top: 40px;
+.nav-link {
+  color: white !important;
+}
+.about {
+  background: #00C9FF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #92FE9D, #00C9FF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.card {
-  width: auto;
+.navbar-collapse {
+  background-color: white;
+  color: black;
+}
+
+.cover {
+  text-align: center;
+  padding: 0 1.5rem;
+  padding-top: 25vh;
+  height: 100vh;
+}
+
+.cover-heading {
+  padding: 20px 20px;
+}
+
+.cover-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+
+.cover-container {
+  min-width: 300px;
+  min-height: 300px;
 }
