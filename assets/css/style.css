@@ -1,6 +1,7 @@
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
+
   }
 
   .cover {
@@ -107,10 +108,53 @@ h4, h5, h6 {
   background-color: #F6F8F9;
 }
 
+.courses {
+  background-color: #F6F8F9;
+}
+
+.honors {
+  background-color: #F6F8F9;
+}
+
 i {
   font-size: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+}
+
+.resume {
+  text-align: left;
+}
+
+.year {
+  text-align: right;
+}
+
+.fa {
+  font-size: 20px !important;
+  display: block;
+  padding: 5px !important;
+}
+
+#facebook {
+  font-size: 50px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  color: #4468B0;
+}
+
+#linkedin {
+  font-size: 50px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  color: #1178B3;
+}
+
+#github {
+  font-size: 50px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  color: black;
 }
