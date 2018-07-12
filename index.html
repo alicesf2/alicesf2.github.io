@@ -12,7 +12,7 @@
   <title>Alice Fang</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-bg">
     <div class="container">
       <a class="navbar-brand" href="index.html">Alice Fang</a>
@@ -22,25 +22,28 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="experience.html">Experience</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="skills.html">Skills</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="education.html">Education</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="activities.html">Activities</a>
+            <a class="nav-link" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="honors.html">Honors</a>
+            <a class="nav-link" href="#activities">Activities</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="interests.html">Interests</a>
+            <a class="nav-link" href="#honors">Honors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -49,72 +52,79 @@
 
   <!--Content Section-->
 
-  <!--About Section-->
-  <div class="about">
+  <!--Cover Section-->
+  <div class="cover-section">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <main role="main" class="inner cover">
-        <img class="cover-img" src="assets/img/profile.jpg">
-        <h1 class="cover-heading">Alice Fang</h1>
-        <p class="lead">Inquisitve and adabtaple computer science student.
+        <h1 class="display-1">Alice Fang</h1>
+        <p class="lead">Inquisitve and adabtaple student.
           <br> Passionate about data, development, and design.
           <br> Always learning, always up for a challenge.</p>
         <p class="lead">
-          <a href="#experience" class="btn btn-lg btn-secondary">Learn more</a>
+          <a href="#about" class="btn btn-lg btn-secondary">Learn more</a>
         </p>
       </main>
     </div>
   </div>
 
-  <!--Experience Section-->
-  <!-- <div class="panel" id="experience"></div> -->
-
-    <!--Skill 1: Java-->
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <main role="main" class="inner cover">
-        <div class="img">
-          <img class="logo" src="assets/img/java.png">
-        </div>
-        <div class="txt">
-          <p class="lead">Experienced in object-oriented programming with IntelliJ and mobile development with Android Studio</p>
-        </div>
-      </main>
-    </div>
-
-    <!--Skill 2: Python-->
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <main role="main" class="inner cover">
-        <div class="img">
-          <img class="logo" src="assets/img/python.png">
-        </div>
-        <div class="txt">
-          <p class="lead">Experienced in object-oriented programming with IntelliJ and mobile development with Android Studio</p>
-        </div>
-      </main>
-    </div>
-
-    <!--Skill 3: C++-->
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <main role="main" class="inner cover">
-        <div class="img">
-          <img class="logo" src="assets/img/cpp.png">
-        </div>
-        <div class="txt">
-          <p class="lead">Experienced in object-oriented programming with IntelliJ and mobile development with Android Studio</p>
-          <p class="lead">
-            <a href="#experience" class="btn btn-lg btn-secondary">Learn more</a>
-          </p>
-        </div>
-      </main>
-    </div>
-  </div>
-
-  <!--Skills Section-->
-  <div class="skills">
+  <!--About Section-->
+  <div class="about">
     <div class="container-fluid">
+      <h1 id="about">About</h1>
+      <blockquote class="blockquote">
+        <p class="mb-0">I am Beyonce, always.</p>
+        <footer class="blockquote-footer">Michael Scott</footer>
+      </blockquote>
+      <img class="profile-img" src="assets/img/profile.jpg">
+      <p class="lead">Hello world, I'm Alice! I'm a second year computer science student at the University of Illinois Urbana-Champaign. In just one year I've gained experience in object-oriented programming and web development, as well as a hint of data science. My
+        interest and passions include, but aren't limited to, data visualization, machine learning, software development, and graphic and UI/UX design. Honestly I would take a class on every topic in computer science if I could. On campus I'm heavily
+        involved in CS organizations, such as WCS and ACM. When I'm not coding, I enjoy sleeping, eating, watching movies, spending all my money on bubble tea, and dancing. And watching The Office.</p>
     </div>
   </div>
+
+  <!--Experience Section-->
+  <div class="experience">
+    <div class="container-fluid">
+      <h1 id="experience">Experience</h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Software Development Intern</h4>
+          <h5>Productive Edge</h5>
+          <h6>May 2018 - Present</h6>
+          <ul>
+            <li>Assist in building proof of concepts and developing augmented reality apps using Swift, Java, and JavaScript</li>
+            <li>Collaborate with a team of 4 interns for an upcoming machine learning project</li>
+            <li>Researched open source content management systems for digital signage in real estate</li>
+            <li>Researched software to design and control pathways for drone light shows</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4>Assistant Web Developer</h4>
+          <h5>Fenghua Academy</h5>
+          <h6>May 2018 - Present</h6>
+          <ul>
+            <li>Refine school communication by creating a portal where administrators can send mass emails and update school news</li>
+            <li>Redesign the layout and aesthetic of the website using Bootstrap</li>
+            <li>Maintain the website content by updating old links, photos, and news</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4>Data Analytics Job Shadow</h4>
+          <h5>Caterpillar Inc.</h5>
+          <h6>Apr 2018</h6>
+          <ul>
+            <li>Acquired knowledge of data analysis techniques and applied them to a sample dataset</li>
+            <li>Gained insight into data visualization technologies such as Tableau</li>
+            <li>Learned about project management methodologies such as Agile/Scrum</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
+
+  <!--Projects Section-->
+  
+
 </body>
 
 </html>
