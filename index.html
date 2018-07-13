@@ -13,15 +13,15 @@
   <title>Alice Fang</title>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-bg">
+<body>
+  <nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg navbar-dark nav-bg">
     <div class="container">
       <a class="navbar-brand" href="index.html">Alice Fang</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="nav nav-pills ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
@@ -65,7 +65,7 @@
           <br> Passionate about data, development, and design.
           <br> Always learning, always up for a challenge.</p>
         <p class="lead">
-          <a href="#about" class="btn btn-lg btn-secondary">Learn more</a>
+          <a href="#about" class="btn btn-lg btn-dark">Learn more</a>
         </p>
       </main>
     </div>
@@ -75,14 +75,16 @@
   <div class="about" id="about">
     <div class="container-fluid">
       <h1>About</h1>
-      <blockquote class="blockquote">
+      <!-- <blockquote class="blockquote">
         <p class="mb-0">I am Beyonce, always.</p>
         <footer class="blockquote-footer">Michael Scott</footer>
-      </blockquote>
+      </blockquote> -->
       <img class="profile-img" src="assets/img/profile.jpg">
-      <p class="lead">Hello world, I'm Alice! I'm a second year computer science student at the University of Illinois Urbana-Champaign. In just one year I've gained experience in object-oriented programming and web development, as well as a hint of data science. My
+      <p class="bio">
+        Hello world, I'm Alice! I'm a second year computer science student at the University of Illinois Urbana-Champaign. In just one year I've gained experience in object-oriented programming and web development, as well as a hint of data science. My
         interest and passions include, but aren't limited to, data visualization, machine learning, software development, and graphic and UI/UX design. Honestly I would take a class on every topic in computer science if I could. On campus I'm heavily
-        involved in CS organizations, such as WCS and ACM. When I'm not coding, I enjoy sleeping, eating, watching movies, spending all my money on bubble tea, and dancing. And watching The Office.</p>
+        involved in CS organizations, such as WCS and ACM. When I'm not coding, I enjoy sleeping, eating, watching movies, spending all my money on bubble tea, and dancing. And watching The Office.
+      </p>
     </div>
   </div>
 
@@ -90,10 +92,10 @@
   <div class="experience" id="experience">
     <div class="container-fluid">
       <h1>Experience</h1>
-      <blockquote class="blockquote">
+      <!-- <blockquote class="blockquote">
         <p class="mb-0">The only source of knowledge is experience.</p>
         <footer class="blockquote-footer">Albert Einstein</footer>
-      </blockquote>
+      </blockquote> -->
       <div class="row">
         <div class="col-lg-4">
           <h4>Software Development Intern</h4>
@@ -134,10 +136,10 @@
   <div class="projects" id="projects">
     <div class="container-fluid">
       <h1>Projects</h1>
-      <blockquote class="blockquote">
+      <!-- <blockquote class="blockquote">
         <p class="mb-0">Exploration is really the essence of the human spirit.</p>
         <footer class="blockquote-footer">Frank Borman</footer>
-      </blockquote>
+      </blockquote> -->
       <div class="row">
         <div class="col-lg-4">
           <h4>
@@ -178,10 +180,10 @@
   <div class="skills" id="skills">
     <div class="container-fluid">
       <h1>Skills</h1>
-      <blockquote class="blockquote">
+      <!-- <blockquote class="blockquote">
         <p class="mb-0">Dude, suckin' at something is the first step to being sorta good at something.</p>
         <footer class="blockquote-footer">Jake the Dog</footer>
-      </blockquote>
+      </blockquote> -->
 
       <!--Headings-->
       <div class="row">
@@ -202,7 +204,7 @@
         <!--Section 1: Languages-->
         <div class="col-lg-2">
           <div class="row">
-            <i class="devicon-java-plain colored" title="Java" alt="Java"></i>
+            <i class="devicon-java-plain colored" title="Java"></i>
           </div>
           <div class="row">
             <i class="devicon-html5-plain colored" title="HTML"></i>
@@ -288,19 +290,19 @@
         <!--Section 3: Tools-->
         <div class="col-lg-2">
           <div class="row">
-            <i class="devicon-github-plain colored"></i>
+            <i class="devicon-github-plain colored" title="GitHub"></i>
           </div>
           <div class="row">
-            <i class="devicon-bootstrap-plain colored"></i>
+            <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
           </div>
           <div class="row">
-            <i class="devicon-atom-plain colored"></i>
+            <i class="devicon-atom-plain colored" title="Atom"></i>
           </div>
           <div class="row">
-            <i class="devicon-intellij-plain colored"></i>
+            <i class="devicon-intellij-plain colored" title="IntelliJ"></i>
           </div>
           <div class="row">
-            <i class="devicon-visualstudio-plain colored"></i>
+            <i class="devicon-visualstudio-plain colored" title="Visual Studio"></i>
           </div>
         </div>
 
@@ -361,13 +363,13 @@
         <!--Section 5: Operating Systems-->
         <div class="col-lg-2">
           <div class="row">
-            <i class="devicon-windows8-original colored"></i>
+            <i class="devicon-windows8-original colored" title="Windows"></i>
           </div>
           <div class="row">
-            <i class="devicon-apple-original colored"></i>
+            <i class="devicon-apple-original colored" title="Mac/iOS"></i>
           </div>
           <div class="row">
-            <i class="devicon-android-plain colored"></i>
+            <i class="devicon-android-plain colored" title="Android"></i>
           </div>
         </div>
 
@@ -412,10 +414,10 @@
   <div class="education" id="education">
     <div class="container-fluid">
       <h1>Education</h1>
-      <blockquote class="blockquote">
+      <!-- <blockquote class="blockquote">
         <p class="mb-0">Develop a passion for learning. If you do, you will never cease to grow.</p>
         <footer class="blockquote-footer">Anthony J D'Angelo</footer>
-      </blockquote>
+      </blockquote> -->
       <div class="row">
         <div class="col-lg-6">
           <h4 class="resume">University of Illinois Urbana-Champaign</h4>
@@ -465,10 +467,10 @@
   <div class="activities" id="activities">
     <div class="container-fluid">
       <h1>Activities</h1>
-      <blockquote class="blockquote">
+      <!-- <blockquote class="blockquote">
         <p class="mb-0">Do what you love, and do it well - that's much more meaningful than any metric.</p>
         <footer class="blockquote-footer">Kevin Systrom</footer>
-      </blockquote>
+      </blockquote> -->
       <div class="row">
         <div class="col-lg-4">
           <h4>
@@ -506,17 +508,25 @@
   </div>
 
   <!--Honors Section-->
-  <div class="honors" id="Honors">
+  <div class="honors" id="honors">
     <div class="container-fluid">
       <h1>Honors</h2>
-        <blockquote class="blockquote">
+        <!-- <blockquote class="blockquote">
           <p class="mb-0">Dignity does not consist in possessing honors, but in deserving them.</p>
           <footer class="blockquote-footer">Aristotle</footer>
-        </blockquote>
+        </blockquote> -->
         <div class="card mx-auto text-center h-100">
           <div class="card-body">
-            <h5>James Scholar in Engineering</h5>
-            <h6>Apr 2018</h6>
+            <h4>Most Active Member</h4>
+            <h5>Women in Computer Science</h5>
+            <h6>May 2018</h6>
+          </div>
+        </div>
+        <div class="card mx-auto text-center h-100">
+          <div class="card-body">
+            <h4>James Scholar in Engineering</h4>
+            <h5>University of Illinois Urbana-Champaign</h5>
+            <h6>Jan 2018</h6>
           </div>
         </div>
     </div>
