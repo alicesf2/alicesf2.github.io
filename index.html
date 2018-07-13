@@ -10,6 +10,18 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="assets/bootstrap/jquery/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 30) {
+          $(".navbar").css("background", "black");
+        } else {
+          $(".navbar").css("background", "transparent");
+        }
+      })
+    })
+  </script>
   <title>Alice Fang</title>
 </head>
 
@@ -81,9 +93,9 @@
       </blockquote> -->
       <img class="profile-img" src="assets/img/profile.jpg">
       <p class="bio">
-        Hello world, I'm Alice! I'm a second year computer science student at the University of Illinois Urbana-Champaign. In just one year I've gained experience in object-oriented programming and web development, as well as a hint of data science. My
-        interest and passions include, but aren't limited to, data visualization, machine learning, software development, and graphic and UI/UX design. Honestly I would take a class on every topic in computer science if I could. On campus I'm heavily
-        involved in CS organizations, such as WCS and ACM. When I'm not coding, I enjoy sleeping, eating, watching movies, spending all my money on bubble tea, and dancing. And watching The Office.
+        Hello world, I'm Alice! I'm a second year computer science student at the University of Illinois Urbana-Champaign. In just one year I've gained experience in object-oriented programming and web development, as well as a hint of data science. My interest
+        and passions include, but aren't limited to, data visualization, machine learning, software development, and graphic and UI/UX design. Honestly I would take a class on every topic in computer science if I could. On campus I'm heavily involved
+        in CS organizations, such as WCS and ACM. When I'm not coding, I enjoy sleeping, eating, watching movies, spending all my money on bubble tea, and dancing. And watching The Office.
       </p>
     </div>
   </div>
