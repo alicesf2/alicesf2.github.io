@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles/App.css";
+import { Container } from "semantic-ui-react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Current from "./pages/Current";
+import Upcoming from "./pages/Upcoming";
+import Achievements from "./pages/Achievements";
+import Funsies from "./pages/Funsies";
+import Photos from "./pages/Photos";
+import Nav from "./components/Nav";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Container className="page-wrapper">
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/current" component={Current} />
+          <Route exact path="/upcoming" component={Upcoming} />
+          <Route exact path="/achievements" component={Achievements} />
+          <Route exact path="/funsies" component={Funsies} />
+          <Route exact path="/photos" component={Photos} />
+        </Switch>
+      </Container>
+    </Router>
   );
 }
-
-export default App;

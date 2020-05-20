@@ -1,0 +1,43 @@
+.page-wrapper {
+  margin-top: 2rem;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.page-description {
+  text-align: center;
+  font-size: 20px;
+}
+
+.current-card-container {
+  margin-top: 3rem;
+}
+
+.content-list {
+  margin-top: 2rem;
+}
+
+.quote {
+  font-family: "Coming Soon", cursive;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+.quote-author {
+  font-family: "Coming Soon", cursive;
+  text-align: center;
+  font-size: 20px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.grid-container {
+  margin-right: 5rem;
+}
