@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid } from "semantic-ui-react";
 import StackGrid from "react-stack-grid";
 
 export default function Funsies() {

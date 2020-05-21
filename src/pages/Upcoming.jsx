@@ -1,5 +1,6 @@
 import React from "react";
 import { List } from "semantic-ui-react";
+
 export default function Current() {
   return (
     <>
@@ -10,19 +11,22 @@ export default function Current() {
           <List.Item>may 25: h4i projects</List.Item>
           <List.Item>
             may 28:{" "}
-            <a href="https://docker.events.cube365.net/docker/dockercon">
+            <a
+              href="https://docker.events.cube365.net/docker/dockercon"
+              target="_blank"
+            >
               dockercon
             </a>
           </List.Item>
           <List.Item>
             may 30-31:{" "}
-            <a href="https://covid19.spaceappschallenge.org/">
+            <a href="https://covid19.spaceappschallenge.org/" target="_blank">
               spaceapps hackathon
             </a>
           </List.Item>
           <List.Item>
             june 8-12:{" "}
-            <a href="https://womenimpacttech.com/wit-connect">
+            <a href="https://womenimpacttech.com/wit-connect" target="_blank">
               wit connect conference
             </a>
           </List.Item>

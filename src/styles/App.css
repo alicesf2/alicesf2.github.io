@@ -1,5 +1,5 @@
 .page-wrapper {
-  margin-top: 2rem;
+  margin: 2rem 0rem 3rem 0rem;
 }
 
 .page-header {
@@ -9,14 +9,17 @@
 .page-description {
   text-align: center;
   font-size: 20px;
+  margin: 0rem 2rem 1rem 2rem;
 }
 
 .current-card-container {
   margin-top: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .content-list {
-  margin-top: 2rem;
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 .quote {
@@ -40,4 +43,29 @@
 
 .grid-container {
   margin-right: 5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+.menu-bottom {
+  margin: 3rem 1rem 3rem 1rem;
 }

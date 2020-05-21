@@ -1,12 +1,13 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
+
 export default function Current() {
   return (
     <>
       <h1 className="page-header">current</h1>
       <p className="page-description">what i'm up to right now 💁🏻‍♀️</p>
       <div className="current-card-container">
-        <Card.Group itemsPerRow={4}>
+        <Card.Group centered>
           <Card>
             <Card.Content>
               <Card.Header>data visualization 📈</Card.Header>

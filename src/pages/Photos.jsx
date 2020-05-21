@@ -4,6 +4,8 @@ import StackGrid from "react-stack-grid";
 
 export default function Photos() {
   const images = [
+    { src: "5-20-1.png", caption: "5/20: thinking of uwu 🤔" },
+    { src: "5-20.png", caption: "5/20: appa sneeze like my dad" },
     { src: "5-19.png", caption: "5/19: i can't change my background :c" },
     { src: "5-19.jpg", caption: "5/19: we are not fit ❤️" },
     {
@@ -14,6 +16,7 @@ export default function Photos() {
       src: "5-15.jpeg",
       caption: "5/15: we know who the aesthetic one is"
     },
+    { src: "5-14.jpg", caption: "5/14: sandra with the classic face slice" },
     { src: "5-14.png", caption: "5/14: :D" },
     { src: "5-13.png", caption: "5/13: amy recursion" },
     { src: "5-6.png", caption: "5/6: amy's new weave" },
