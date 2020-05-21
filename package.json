@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "homepage": "http://alicesf2.github.io",
+  "name": "alicesf2.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
