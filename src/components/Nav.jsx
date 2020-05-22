@@ -53,22 +53,34 @@ export default function Nav() {
       <>
         <ul>
           <li>
-            <Link to="/">quarantine with alice 🌻</Link>
+            <Link className="nav-link-mobile" to="/">
+              quarantine with alice 🌻
+            </Link>
           </li>
           <li>
-            <Link to="/current">current</Link>
+            <Link className="nav-link-mobile" to="/current">
+              current
+            </Link>
           </li>
           <li>
-            <Link to="/upcoming">upcoming</Link>
+            <Link className="nav-link-mobile" to="/upcoming">
+              upcoming
+            </Link>
           </li>
           <li>
-            <Link to="/achievements">achievements</Link>
+            <Link className="nav-link-mobile" to="/achievements">
+              achievements
+            </Link>
           </li>
           <li>
-            <Link to="/funsies">funsies</Link>
+            <Link className="nav-link-mobile" to="/funsies">
+              funsies
+            </Link>
           </li>
           <li>
-            <Link to="/faces">faces</Link>
+            <Link className="nav-link-mobile" to="/faces">
+              faces
+            </Link>
           </li>
         </ul>
         <hr className="menu-bottom"></hr>
