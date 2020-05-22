@@ -13,13 +13,13 @@ export default function Achievements() {
       <StackGrid
         monitorImagesLoaded={true}
         columnWidth={250}
-        duration={1000}
+        duration={0}
         gutterWidth={10}
         gutterHeight={10}
         className="grid-container"
       >
         {achievements.map(achievement => (
-          <Card>
+          <Card raised>
             {achievement.src && (
               <Image
                 src={require(`../assets/achievements/${achievement.src}`)}

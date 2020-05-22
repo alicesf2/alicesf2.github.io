@@ -12,16 +12,6 @@
   margin: 0rem 2rem 1rem 2rem;
 }
 
-.current-card-container {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-}
-
-.content-list {
-  margin: 2rem 2rem 2rem 2rem;
-}
-
 .quote {
   font-family: "Allura", cursive;
   margin-top: 3rem;
@@ -92,4 +82,26 @@ a:hover {
 .nav-link-mobile {
   font-family: "Allura", cursive;
   font-size: 30px;
+}
+
+.sus-post {
+  margin-bottom: 2rem;
+}
+
+.sus-text {
+  font-size: 15px;
+}
+
+.fixed-col {
+  position: fixed;
+}
+
+.segment-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.segment-item {
+  padding: 5rem;
 }

@@ -35,6 +35,11 @@ export default function Nav() {
           </Link>
         </Menu.Item>
         <Menu.Item>
+          <Link className="nav-link" to="/sustainability">
+            sustainability
+          </Link>
+        </Menu.Item>
+        <Menu.Item>
           <Link className="nav-link" to="/funsies">
             funsies
           </Link>
@@ -70,6 +75,11 @@ export default function Nav() {
           <li>
             <Link className="nav-link-mobile" to="/achievements">
               achievements
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link-mobile" to="/sustainability">
+              sustainability
             </Link>
           </li>
           <li>

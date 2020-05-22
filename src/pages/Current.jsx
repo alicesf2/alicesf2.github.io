@@ -11,7 +11,7 @@ export default function Current() {
       <StackGrid
         monitorImagesLoaded={true}
         columnWidth={250}
-        duration={1000}
+        duration={0}
         gutterWidth={10}
         gutterHeight={10}
         className="grid-container"
@@ -22,6 +22,7 @@ export default function Current() {
             meta={cur.meta}
             description={cur.description}
             extra={cur.extra}
+            raised
           />
         ))}
       </StackGrid>

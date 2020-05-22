@@ -13,7 +13,7 @@ export default function Funsies() {
       <StackGrid
         monitorImagesLoaded={true}
         columnWidth={250}
-        duration={1000}
+        duration={0}
         gutterWidth={10}
         gutterHeight={10}
         className="grid-container"
@@ -22,6 +22,7 @@ export default function Funsies() {
           <Card
             image={require(`../assets/funsies/${fun.src}`)}
             description={fun.caption}
+            raised
           />
         ))}
       </StackGrid>

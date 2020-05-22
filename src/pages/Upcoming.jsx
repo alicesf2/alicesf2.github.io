@@ -1,37 +1,20 @@
 import React from "react";
-import { List } from "semantic-ui-react";
+import { Button, Segment } from "semantic-ui-react";
+import upcoming from "../data/upcoming.js";
 
 export default function Current() {
   return (
     <>
       <h1 className="page-header">upcoming events</h1>
       <p className="page-description">some things to look forward to 📅</p>
-      <div className="content-list">
-        <List size="large" bulleted>
-          <List.Item>may 25: h4i projects</List.Item>
-          <List.Item>
-            may 28:{" "}
-            <a
-              href="https://docker.events.cube365.net/docker/dockercon"
-              target="_blank"
-            >
-              dockercon
-            </a>
-          </List.Item>
-          <List.Item>
-            may 30-31:{" "}
-            <a href="https://covid19.spaceappschallenge.org/" target="_blank">
-              spaceapps hackathon
-            </a>
-          </List.Item>
-          <List.Item>
-            june 8-12:{" "}
-            <a href="https://womenimpacttech.com/wit-connect" target="_blank">
-              wit connect conference
-            </a>
-          </List.Item>
-          <List.Item>july 6-aug 14: jpmorgan chase internship</List.Item>
-        </List>
+      <div className="segment-container">
+        <Segment.Group compact raised size="large">
+          {upcoming.map(event => (
+            <Segment>
+              {event.href ? <a href={event.href}>{event.name}</a> : event.name}
+            </Segment>
+          ))}
+        </Segment.Group>
       </div>
     </>
   );
