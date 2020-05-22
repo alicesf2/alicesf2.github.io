@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Nav() {
   const [width, setWidth] = useState(window.innerWidth);
   const [expandedMenu, setExpandedMenu] = useState(false);
-  const mobileThreshold = 500;
+  const mobileThreshold = 1050;
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -30,7 +30,7 @@ export default function Nav() {
           <Link to="/funsies">funsies</Link>
         </Menu.Item>
         <Menu.Item>
-          <Link to="/photos">photos</Link>
+          <Link to="/faces">faces</Link>
         </Menu.Item>
       </Menu>
     );
@@ -56,7 +56,7 @@ export default function Nav() {
             <Link to="/funsies">funsies</Link>
           </li>
           <li>
-            <Link to="/photos">photos</Link>
+            <Link to="/faces">faces</Link>
           </li>
         </ul>
         <hr className="menu-bottom"></hr>

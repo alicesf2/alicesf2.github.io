@@ -23,16 +23,16 @@
 }
 
 .quote {
-  font-family: "Coming Soon", cursive;
+  font-family: "Allura", cursive;
   margin-top: 3rem;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .quote-author {
-  font-family: "Coming Soon", cursive;
+  font-family: "Allura", cursive;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .profile-container {
@@ -42,7 +42,7 @@
 }
 
 .grid-container {
-  margin-right: 5rem;
+  margin-top: 2rem;
 }
 
 ul {
@@ -68,4 +68,18 @@ a:hover {
 
 .menu-bottom {
   margin: 3rem 1rem 3rem 1rem;
+}
+
+.achievement-row {
+  margin: 2rem;
+}
+
+.achievement-desc {
+  font-size: 18px;
+  margin: 0rem 2rem 0rem 2rem;
+}
+
+.achievement-col {
+  display: flex;
+  justify-content: center;
 }

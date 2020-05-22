@@ -7,7 +7,7 @@ import Current from "./pages/Current";
 import Upcoming from "./pages/Upcoming";
 import Achievements from "./pages/Achievements";
 import Funsies from "./pages/Funsies";
-import Photos from "./pages/Photos";
+import Faces from "./pages/Faces";
 import Nav from "./components/Nav";
 
 export default function App() {
@@ -21,7 +21,7 @@ export default function App() {
           <Route exact path="/upcoming" component={Upcoming} />
           <Route exact path="/achievements" component={Achievements} />
           <Route exact path="/funsies" component={Funsies} />
-          <Route exact path="/photos" component={Photos} />
+          <Route exact path="/faces" component={Faces} />
         </Switch>
       </Container>
     </Router>

@@ -1,14 +1,14 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
 import StackGrid from "react-stack-grid";
-import funsies from "../data/funsies";
+import faces from "../data/faces";
 
-export default function Funsies() {
+export default function Faces() {
   return (
     <>
-      <h1 className="page-header">funsies</h1>
+      <h1 className="page-header">photos</h1>
       <p className="page-description">
-        some games, shows, and new hobbies that i've picked up 🎲
+        the faces that both keep me sane and drive me insane 🤪
       </p>
       <StackGrid
         monitorImagesLoaded={true}
@@ -18,10 +18,10 @@ export default function Funsies() {
         gutterHeight={10}
         className="grid-container"
       >
-        {funsies.map(fun => (
+        {faces.map(face => (
           <Card
-            image={require(`../assets/funsies/${fun.src}`)}
-            description={fun.caption}
+            image={require(`../assets/faces/${face.src}`)}
+            description={face.caption}
           />
         ))}
       </StackGrid>
