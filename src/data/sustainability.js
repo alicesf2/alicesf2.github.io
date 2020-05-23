@@ -11,6 +11,11 @@ export const resources = [
       "https://www.netflix.com/watch/80114460?trackId=13752289&tctx=0%2C0%2Cc6e175fa74361fa5e00f285334708c1e5c3747a3%3A02d1563ccfbfd41a9cae9275fe9cf8b5489ae22c%2C%2C%2C"
   },
   {
+    name: "saving the environment from consumerism",
+    color: "black",
+    href: "https://www.youtube.com/watch?v=ZtmOAZoyRa0"
+  },
+  {
     name: "cowspiracy",
     color: "green",
     href:

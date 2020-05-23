@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Segment } from "semantic-ui-react";
+import { Grid, Segment } from "semantic-ui-react";
 import upcoming from "../data/upcoming.js";
 
 export default function Current() {

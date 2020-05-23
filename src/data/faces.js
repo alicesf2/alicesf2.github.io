@@ -1,4 +1,10 @@
 export default [
+  { src: "5-22-1.png", caption: "5/22: connoisseur j chillin" },
+  {
+    src: "5-22.png",
+    caption: "5/22: me & sandy shook by jojo's hair and expensive violin 🎻"
+  },
+  { src: "5-20-1.png", caption: "5/20: connoisseur potate 🥔" },
   { src: "5-20.png", caption: "5/20: thinking of uwu 🤔" },
   { src: "5-19.png", caption: "5/19: i can't change my background :c" },
   { src: "5-19.jpg", caption: "5/19: we are not fit ❤️" },
