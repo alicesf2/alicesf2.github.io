@@ -1,4 +1,11 @@
 export default [
+  { src: "5-23-6.png", caption: "5/23: 😧" },
+  { src: "5-23-5.png", caption: "5/23: sorry 😗" },
+  { src: "5-23-4.png", caption: "5/23: 😑" },
+  { src: "5-23-3.png", caption: "5/23: 😮" },
+  { src: "5-23-2.png", caption: "5/23: 🐽💦🏃🏻‍♂️" },
+  { src: "5-23-1.png", caption: "5/23: 🔺" },
+  { src: "5-23.png", caption: "5/23: aang lost his marbles" },
   { src: "5-20.png", caption: "5/20: appa sneeze like my dad" },
   {
     src: "5-18.jpg",

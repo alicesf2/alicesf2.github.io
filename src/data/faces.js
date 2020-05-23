@@ -1,4 +1,5 @@
 export default [
+  { src: "5-22-2.png", caption: "5/22: amy froze 🥶" },
   { src: "5-22-1.png", caption: "5/22: connoisseur j chillin" },
   {
     src: "5-22.png",
