@@ -1,11 +1,16 @@
 export default [
-  { src: "5-23-6.png", caption: "5/23: 😧" },
-  { src: "5-23-5.png", caption: "5/23: sorry 😗" },
-  { src: "5-23-4.png", caption: "5/23: 😑" },
-  { src: "5-23-3.png", caption: "5/23: 😮" },
-  { src: "5-23-2.png", caption: "5/23: 🐽💦🏃🏻‍♂️" },
-  { src: "5-23-1.png", caption: "5/23: 🔺" },
-  { src: "5-23.png", caption: "5/23: aang lost his marbles" },
+  { src: "5-23-4.png", caption: "5/23: #uiuc-bored-games literature" },
+  { src: "5-23-3.png", caption: "5/23: #uiuc-bored-games codenames" },
+  { src: "5-23-2.png", caption: "5/23: #uiuc-bored-games mit game" },
+  { src: "5-23-1.png", caption: "5/23: #uiuc-bored-games dominion (aria won)" },
+  { src: "5-23.png", caption: "5/23: u can draw on slack share screen" },
+  { src: "5-22-6.png", caption: "5/22: 😧" },
+  { src: "5-22-5.png", caption: "5/22: sorry 😗" },
+  { src: "5-22-4.png", caption: "5/22: 😑" },
+  { src: "5-22-3.png", caption: "5/22: 😮" },
+  { src: "5-22-2.png", caption: "5/22: 🐽💦🏃🏻‍♂️" },
+  { src: "5-22-1.png", caption: "5/22: 🔺" },
+  { src: "5-22.png", caption: "5/22: aang lost his marbles" },
   { src: "5-20.png", caption: "5/20: appa sneeze like my dad" },
   {
     src: "5-18.jpg",
@@ -13,11 +18,11 @@ export default [
   },
   {
     src: "5-17.png",
-    caption: "5/17: albert sucks at drawing"
+    caption: "5/17: #uiuc-bored-games albert sucks at drawing"
   },
   {
     src: "5-17-1.png",
-    caption: "5/17: i suck at avalon"
+    caption: "5/17: #uiuc-bored-games i suck at avalon"
   },
   {
     src: "5-17.jpg",
