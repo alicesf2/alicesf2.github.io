@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Menu, Icon } from "semantic-ui-react";
+import { Checkbox, Menu, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
@@ -20,13 +20,8 @@ export default function Nav() {
           </Link>
         </Menu.Item>
         <Menu.Item>
-          <Link className="nav-link" to="/current">
-            current
-          </Link>
-        </Menu.Item>
-        <Menu.Item>
-          <Link className="nav-link" to="/upcoming">
-            upcoming
+          <Link className="nav-link" to="/now">
+            now
           </Link>
         </Menu.Item>
         <Menu.Item>
@@ -63,13 +58,8 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link className="nav-link-mobile" to="/current">
-              current
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link-mobile" to="/upcoming">
-              upcoming
+            <Link className="nav-link-mobile" to="/now">
+              now
             </Link>
           </li>
           <li>

@@ -1,10 +1,9 @@
 import React from "react";
 import "./styles/App.css";
-import { Container } from "semantic-ui-react";
+import { Checkbox, Container } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Current from "./pages/Current";
-import Upcoming from "./pages/Upcoming";
+import Now from "./pages/Now";
 import Achievements from "./pages/Achievements";
 import Sustainability from "./pages/Sustainability";
 import Funsies from "./pages/Funsies";
@@ -16,10 +15,10 @@ export default function App() {
     <Router>
       <Container className="page-wrapper">
         <Nav />
+
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/current" component={Current} />
-          <Route exact path="/upcoming" component={Upcoming} />
+          <Route exact path="/now" component={Now} />
           <Route exact path="/achievements" component={Achievements} />
           <Route exact path="/sustainability" component={Sustainability} />
           <Route exact path="/funsies" component={Funsies} />

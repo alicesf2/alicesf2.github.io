@@ -6,10 +6,7 @@ import faces from "../data/faces";
 export default function Faces() {
   return (
     <>
-      <h1 className="page-header">photos</h1>
-      <p className="page-description">
-        the faces that both keep me sane and drive me insane 🤪
-      </p>
+      <p className="page-header">they keep me sane and drive me insane 🤪</p>
       <StackGrid
         monitorImagesLoaded={true}
         columnWidth={250}

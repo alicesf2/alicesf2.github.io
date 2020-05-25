@@ -6,10 +6,7 @@ import funsies from "../data/funsies";
 export default function Funsies() {
   return (
     <>
-      <h1 className="page-header">funsies</h1>
-      <p className="page-description">
-        some games, shows, and new hobbies that i've picked up 🎲
-      </p>
+      <p className="page-header">games, shows, and hobbies 🎲</p>
       <StackGrid
         monitorImagesLoaded={true}
         columnWidth={250}

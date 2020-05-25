@@ -6,10 +6,7 @@ import achievements from "../data/achievements";
 export default function Achievements() {
   return (
     <>
-      <h1 className="page-header">achievements</h1>
-      <p className="page-description">
-        cool shit i've done while stuck at home ✨{" "}
-      </p>
+      <p className="page-header">cool shit i've done at home ✨</p>
       <StackGrid
         monitorImagesLoaded={true}
         columnWidth={250}
