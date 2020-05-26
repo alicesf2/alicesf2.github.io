@@ -118,3 +118,11 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+
+.big-text {
+  font-size: 20px;
+}
+
+.caption {
+  font-size: 15px;
+}

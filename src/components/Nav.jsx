@@ -35,13 +35,8 @@ export default function Nav() {
           </Link>
         </Menu.Item>
         <Menu.Item>
-          <Link className="nav-link" to="/funsies">
-            funsies
-          </Link>
-        </Menu.Item>
-        <Menu.Item>
-          <Link className="nav-link" to="/faces">
-            faces
+          <Link className="nav-link" to="/mems">
+            mems
           </Link>
         </Menu.Item>
       </Menu>
@@ -73,13 +68,8 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link className="nav-link-mobile" to="/funsies">
-              funsies
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link-mobile" to="/faces">
-              faces
+            <Link className="nav-link-mobile" to="/mems">
+              mems
             </Link>
           </li>
         </ul>
