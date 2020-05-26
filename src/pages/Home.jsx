@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="profile-container">
-        <Image src={require("../assets/faces/me.jpg")} size="medium" circular />
+        <Image src={require("../assets/mems/me.jpg")} size="medium" circular />
       </div>
       <p className="quote">
         “Every success story is a tale of constant adaption, revision and
