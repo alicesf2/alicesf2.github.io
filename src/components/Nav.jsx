@@ -6,7 +6,7 @@ export default function Nav(props) {
   const [width, setWidth] = useState(window.innerWidth);
   const [expandedMenu, setExpandedMenu] = useState(false);
   const mobileThreshold = 1050;
-  const [dark, setDark] = useState(props.dark);
+  const { dark, setDark } = props;
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));

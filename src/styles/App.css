@@ -126,3 +126,7 @@ a:hover {
 .caption {
   font-size: 15px;
 }
+
+.background-dark {
+  background-color: black;
+}

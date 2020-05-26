@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./styles/App.css";
 import { Container } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -10,13 +10,31 @@ import Mems from "./pages/Mems";
 import Nav from "./components/Nav";
 
 export default function App() {
+  const [dark, setDark] = useState(false);
+
   return (
     <Router>
       <Container className="page-wrapper">
-        <Nav props={{ dark: false }} />
+        <Nav
+          dark={dark}
+          setDark={darkParam => {
+            setDark(darkParam);
+            if (dark) {
+              document.body.style.backgroundColor = "white";
+              document.body.style.color = "black";
+            } else {
+              document.body.style.backgroundColor = "black";
+              document.body.style.color = "white";
+            }
+          }}
+        />
 
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route
+            exact
+            path="/"
+            render={props => <Home {...props} dark={dark} />}
+          />
           <Route exact path="/now" component={Now} />
           <Route exact path="/achievements" component={Achievements} />
           <Route exact path="/sustainability" component={Sustainability} />
