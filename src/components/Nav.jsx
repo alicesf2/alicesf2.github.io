@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Checkbox, Menu, Icon } from "semantic-ui-react";
+import { Menu, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
-export default function Nav() {
+export default function Nav(props) {
   const [width, setWidth] = useState(window.innerWidth);
   const [expandedMenu, setExpandedMenu] = useState(false);
   const mobileThreshold = 1050;
+  const [dark, setDark] = useState(props.dark);
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -13,11 +14,17 @@ export default function Nav() {
 
   const renderNormalMenu = () => {
     return (
-      <Menu size="large">
+      <Menu size="large" inverted={dark}>
         <Menu.Item>
-          <Link className="nav-link" to="/">
-            quarantine with alice 🌻
-          </Link>
+          {dark ? (
+            <Link className="nav-link" to="/">
+              quarantine with alice 🌸
+            </Link>
+          ) : (
+            <Link className="nav-link" to="/">
+              quarantine with alice 🌻
+            </Link>
+          )}
         </Menu.Item>
         <Menu.Item>
           <Link className="nav-link" to="/now">
@@ -38,6 +45,15 @@ export default function Nav() {
           <Link className="nav-link" to="/mems">
             mems
           </Link>
+        </Menu.Item>
+        <Menu.Item position="right">
+          <Icon
+            onClick={() => {
+              setDark(!dark);
+            }}
+            name={dark ? "sun" : "moon"}
+            link
+          />
         </Menu.Item>
       </Menu>
     );

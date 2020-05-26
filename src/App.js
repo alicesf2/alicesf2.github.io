@@ -13,7 +13,7 @@ export default function App() {
   return (
     <Router>
       <Container className="page-wrapper">
-        <Nav />
+        <Nav props={{ dark: false }} />
 
         <Switch>
           <Route exact path="/" component={Home} />

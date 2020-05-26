@@ -17,12 +17,17 @@ export default function Achievements() {
       >
         {achievements.map(achievement => (
           <Card raised>
-            {achievement.src && (
+            {achievement.src && achievement.href && (
               <Image
                 src={require(`../assets/achievements/${achievement.src}`)}
                 as="a"
                 href={achievement.href}
                 target="_blank"
+              />
+            )}
+            {achievement.src && !achievement.href && (
+              <Image
+                src={require(`../assets/achievements/${achievement.src}`)}
               />
             )}
             <Card.Content>{achievement.description}</Card.Content>

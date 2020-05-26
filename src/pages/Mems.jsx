@@ -18,6 +18,7 @@ export default function Mems() {
           className="sus-text"
           image={require(`../assets/mems/${mem.src}`)}
           description={mem.caption}
+          raised
         />
       ))}
     </StackGrid>
@@ -37,6 +38,7 @@ export default function Mems() {
           className="sus-text"
           image={require(`../assets/mems/${mem.src}`)}
           description={mem.caption}
+          raised
         />
       ))}
     </StackGrid>
@@ -56,6 +58,7 @@ export default function Mems() {
           className="sus-text"
           image={require(`../assets/mems/${mem.src}`)}
           description={mem.caption}
+          raised
         />
       ))}
     </StackGrid>
