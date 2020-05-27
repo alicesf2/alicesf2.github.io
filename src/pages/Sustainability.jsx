@@ -26,7 +26,7 @@ export default function Sustainability(props) {
   const sustainableContent = (
     <Segment.Group className={dark && "segment-group-night"}>
       {sustainability.map(item => (
-        <Segment inverted={dark}>
+        <Segment inverted={dark} className="segment-bottom">
           <a className={dark ? "link-night" : "link-day"} href={item.href}>
             {item.name}
           </a>
@@ -38,7 +38,7 @@ export default function Sustainability(props) {
   const minimalistContent = (
     <Segment.Group className={dark && "segment-group-night"}>
       {minimalism.map(item => (
-        <Segment inverted={dark}>
+        <Segment inverted={dark} className="segment-bottom">
           <a className={dark ? "link-night" : "link-day"} href={item.href}>
             {item.name}
           </a>
@@ -50,7 +50,7 @@ export default function Sustainability(props) {
   const agricultureContent = (
     <Segment.Group className={dark && "segment-group-night"}>
       {agriculture.map(item => (
-        <Segment inverted={dark}>
+        <Segment inverted={dark} className="segment-bottom">
           <a className={dark ? "link-night" : "link-day"} href={item.href}>
             {item.name}
           </a>
@@ -62,7 +62,7 @@ export default function Sustainability(props) {
   const fashionContent = (
     <Segment.Group className={dark && "segment-group-night"}>
       {fashion.map(item => (
-        <Segment inverted={dark}>
+        <Segment inverted={dark} className="segment-bottom">
           <a className={dark ? "link-night" : "link-day"} href={item.href}>
             {item.name}
           </a>
@@ -74,7 +74,7 @@ export default function Sustainability(props) {
   const homeContent = (
     <Segment.Group className={dark && "segment-group-night"}>
       {home.map(item => (
-        <Segment inverted={dark}>
+        <Segment inverted={dark} className="segment-bottom">
           <a className={dark ? "link-night" : "link-day"} href={item.href}>
             {item.name}
           </a>
@@ -84,8 +84,18 @@ export default function Sustainability(props) {
   );
 
   const baseSegments = (
-    <Segment.Group size="large" className={dark && "segment-group-night"}>
-      <Segment inverted={dark}>
+    <Segment.Group
+      size="large"
+      className={
+        dark &&
+        ((homeExpanded && "segment-group-night segment-bottom") ||
+          "segment-group-night")
+      }
+    >
+      <Segment
+        inverted={dark}
+        className={dark && !susExpanded && "segment-bottom"}
+      >
         <Icon
           name={susExpanded ? "caret down" : "caret right"}
           onClick={() => setSusExpanded(!susExpanded)}
@@ -93,7 +103,15 @@ export default function Sustainability(props) {
         sustainability 🍃
       </Segment>
       {susExpanded && sustainableContent}
-      <Segment inverted={dark}>
+      <Segment
+        inverted={dark}
+        className={
+          dark &&
+          ((minExpanded && susExpanded && "segment-top") ||
+            (!minExpanded && susExpanded && "segment-top segment-bottom") ||
+            (!minExpanded && !susExpanded && "segment-bottom"))
+        }
+      >
         <Icon
           name={minExpanded ? "caret down" : "caret right"}
           onClick={() => setMinExpanded(!minExpanded)}
@@ -101,7 +119,15 @@ export default function Sustainability(props) {
         minimalism 💼
       </Segment>
       {minExpanded && minimalistContent}
-      <Segment inverted={dark}>
+      <Segment
+        inverted={dark}
+        className={
+          dark &&
+          ((agriExpanded && minExpanded && "segment-top") ||
+            (!agriExpanded && minExpanded && "segment-top segment-bottom") ||
+            (!agriExpanded && !minExpanded && "segment-bottom"))
+        }
+      >
         <Icon
           name={agriExpanded ? "caret down" : "caret right"}
           onClick={() => setAgriExpanded(!agriExpanded)}
@@ -109,7 +135,17 @@ export default function Sustainability(props) {
         agriculture 🐮
       </Segment>
       {agriExpanded && agricultureContent}
-      <Segment inverted={dark}>
+      <Segment
+        inverted={dark}
+        className={
+          dark &&
+          ((fashionExpanded && agriExpanded && "segment-top") ||
+            (!fashionExpanded &&
+              agriExpanded &&
+              "segment-top segment-bottom") ||
+            (!fashionExpanded && !agriExpanded && "segment-bottom"))
+        }
+      >
         <Icon
           name={fashionExpanded ? "caret down" : "caret right"}
           onClick={() => setFashionExpanded(!fashionExpanded)}
@@ -117,7 +153,17 @@ export default function Sustainability(props) {
         fashion 👗
       </Segment>
       {fashionExpanded && fashionContent}
-      <Segment inverted={dark}>
+      <Segment
+        inverted={dark}
+        className={
+          dark &&
+          ((homeExpanded && fashionExpanded && "segment-top") ||
+            (!homeExpanded &&
+              fashionExpanded &&
+              "segment-top segment-bottom") ||
+            (!homeExpanded && !fashionExpanded && "segment-bottom"))
+        }
+      >
         <Icon
           name={homeExpanded ? "caret down" : "caret right"}
           onClick={() => setHomeExpanded(!homeExpanded)}
@@ -127,34 +173,6 @@ export default function Sustainability(props) {
       {homeExpanded && homeContent}
     </Segment.Group>
   );
-
-  // const rootPanels = [
-  //   {
-  //     key: "sustainability",
-  //     title: "sustainability",
-  //     content: { content: sustainableContent }
-  //   },
-  //   {
-  //     key: "minimalism",
-  //     title: "minimalism",
-  //     content: { content: minimalistContent }
-  //   },
-  //   {
-  //     key: "agriculture",
-  //     title: "agriculture",
-  //     content: { content: agricultureContent }
-  //   },
-  //   {
-  //     key: "fashion",
-  //     title: "fashion",
-  //     content: { content: fashionContent }
-  //   },
-  //   {
-  //     key: "home",
-  //     title: "home",
-  //     content: { content: homeContent }
-  //   }
-  // ];
 
   const web = (
     <>
@@ -170,7 +188,7 @@ export default function Sustainability(props) {
                 <h3 align="center">blog ✏️</h3>
                 {blogPosts.map(post => (
                   <Segment
-                    className={dark && "segment-group-night"}
+                    className={dark && "segment-group-night segment-bottom"}
                     inverted={dark}
                   >
                     <p className="med-text">{post}</p>
