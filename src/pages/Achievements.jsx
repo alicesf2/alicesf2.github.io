@@ -3,7 +3,8 @@ import { Card, Image } from "semantic-ui-react";
 import StackGrid from "react-stack-grid";
 import achievements from "../data/achievements";
 
-export default function Achievements() {
+export default function Achievements(props) {
+  const { dark } = props;
   return (
     <>
       <p className="page-header">cool shit i've done at home ✨</p>
@@ -16,7 +17,7 @@ export default function Achievements() {
         className="grid-container"
       >
         {achievements.map(achievement => (
-          <Card raised>
+          <Card className={dark && "card-dark"} raised>
             {achievement.src && achievement.href && (
               <Image
                 src={require(`../assets/achievements/${achievement.src}`)}

@@ -14,8 +14,12 @@ export default function Nav(props) {
 
   const renderNormalMenu = () => {
     return (
-      <Menu size="large" inverted={dark}>
-        <Menu.Item>
+      <Menu
+        size="large"
+        inverted={dark}
+        className={dark && "segment-group-night"}
+      >
+        <Menu.Item className={dark && "menu-night"}>
           {dark ? (
             <Link className="nav-link" to="/">
               quarantine with alice 🌸
@@ -26,27 +30,27 @@ export default function Nav(props) {
             </Link>
           )}
         </Menu.Item>
-        <Menu.Item>
+        <Menu.Item className={dark && "menu-night"}>
           <Link className="nav-link" to="/now">
             now
           </Link>
         </Menu.Item>
-        <Menu.Item>
+        <Menu.Item className={dark && "menu-night"}>
           <Link className="nav-link" to="/achievements">
             achievements
           </Link>
         </Menu.Item>
-        <Menu.Item>
+        <Menu.Item className={dark && "menu-night"}>
           <Link className="nav-link" to="/sustainability">
             sustainability
           </Link>
         </Menu.Item>
-        <Menu.Item>
+        <Menu.Item className={dark && "menu-night"}>
           <Link className="nav-link" to="/mems">
             mems
           </Link>
         </Menu.Item>
-        <Menu.Item position="right">
+        <Menu.Item className={dark && "mode-btn-night"} position="right">
           <Icon
             onClick={() => {
               setDark(!dark);

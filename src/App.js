@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./styles/App.css";
 import { Container } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -21,9 +21,9 @@ export default function App() {
             setDark(darkParam);
             if (dark) {
               document.body.style.backgroundColor = "white";
-              document.body.style.color = "black";
+              document.body.style.color = "#1B1C1D";
             } else {
-              document.body.style.backgroundColor = "black";
+              document.body.style.backgroundColor = "#1B1C1D";
               document.body.style.color = "white";
             }
           }}
@@ -35,10 +35,26 @@ export default function App() {
             path="/"
             render={props => <Home {...props} dark={dark} />}
           />
-          <Route exact path="/now" component={Now} />
-          <Route exact path="/achievements" component={Achievements} />
-          <Route exact path="/sustainability" component={Sustainability} />
-          <Route exact path="/mems" component={Mems} />
+          <Route
+            exact
+            path="/now"
+            render={props => <Now {...props} dark={dark} />}
+          />
+          <Route
+            exact
+            path="/achievements"
+            render={props => <Achievements {...props} dark={dark} />}
+          />
+          <Route
+            exact
+            path="/sustainability"
+            render={props => <Sustainability {...props} dark={dark} />}
+          />
+          <Route
+            exact
+            path="/mems"
+            render={props => <Mems {...props} dark={dark} />}
+          />
         </Switch>
       </Container>
     </Router>

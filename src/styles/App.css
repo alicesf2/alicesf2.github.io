@@ -41,25 +41,13 @@ li {
   font-size: 20px;
 }
 
-a:link {
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: blue;
-}
-
-/* .link-day {
+.link-day {
   color: black;
 }
 
 .link-night {
   color: white;
-} */
+}
 
 .menu-bottom {
   margin: 3rem 1rem 3rem 1rem;
@@ -82,6 +70,11 @@ a:hover {
 .nav-link {
   font-family: "Allura", cursive;
   font-size: 23px;
+  color: black;
+}
+
+.nav-link:hover {
+  color: #4183c4 !important;
 }
 
 .nav-link-mobile {
@@ -91,10 +84,6 @@ a:hover {
 
 .sus-post {
   margin-bottom: 2rem;
-}
-
-.sus-text {
-  font-size: 15px;
 }
 
 .fixed-col {
@@ -119,6 +108,10 @@ a:hover {
   justify-content: center;
 }
 
+.med-text {
+  font-size: 16px;
+}
+
 .big-text {
   font-size: 20px;
 }
@@ -127,6 +120,22 @@ a:hover {
   font-size: 15px;
 }
 
-.background-dark {
-  background-color: black;
+.card-dark {
+  background-color: #1b1c1d !important;
+}
+
+.card-dark-mems {
+  background-color: #1b1c1d !important;
+}
+
+.segment-group-night {
+  border: 0.1rem solid white !important;
+}
+
+.menu-night {
+  border-right: 0.1rem solid white !important;
+}
+
+.mode-btn-night {
+  border-left: 0.1rem solid white !important;
 }
