@@ -68,29 +68,53 @@ export default function Nav(props) {
       <>
         <ul>
           <li>
-            <Link className="nav-link-mobile" to="/">
+            <Link
+              className={dark ? "nav-link-mobile-night" : "nav-link-mobile"}
+              to="/"
+            >
               quarantine with alice 🌻
             </Link>
           </li>
           <li>
-            <Link className="nav-link-mobile" to="/now">
+            <Link
+              className={dark ? "nav-link-mobile-night" : "nav-link-mobile"}
+              to="/now"
+            >
               now
             </Link>
           </li>
           <li>
-            <Link className="nav-link-mobile" to="/achievements">
+            <Link
+              className={dark ? "nav-link-mobile-night" : "nav-link-mobile"}
+              to="/achievements"
+            >
               achievements
             </Link>
           </li>
           <li>
-            <Link className="nav-link-mobile" to="/sustainability">
+            <Link
+              className={dark ? "nav-link-mobile-night" : "nav-link-mobile"}
+              to="/sustainability"
+            >
               sustainability
             </Link>
           </li>
           <li>
-            <Link className="nav-link-mobile" to="/mems">
+            <Link
+              className={dark ? "nav-link-mobile-night" : "nav-link-mobile"}
+              to="/mems"
+            >
               mems
             </Link>
+          </li>
+          <li>
+            <Icon
+              onClick={() => {
+                setDark(!dark);
+              }}
+              name={dark ? "sun" : "moon"}
+              link
+            />
           </li>
         </ul>
         <hr className="menu-bottom"></hr>

@@ -77,9 +77,20 @@ li {
   color: #4183c4 !important;
 }
 
+.nav-link-mobile:hover {
+  color: #4183c4 !important;
+}
+
 .nav-link-mobile {
   font-family: "Allura", cursive;
   font-size: 30px;
+  color: black;
+}
+
+.nav-link-mobile-night {
+  font-family: "Allura", cursive;
+  font-size: 30px;
+  color: white;
 }
 
 .sus-post {

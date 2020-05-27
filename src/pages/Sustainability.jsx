@@ -83,95 +83,112 @@ export default function Sustainability(props) {
     </Segment.Group>
   );
 
-  const baseSegments = (
-    <Segment.Group
-      size="large"
-      className={
-        dark &&
-        ((homeExpanded && "segment-group-night segment-bottom") ||
-          "segment-group-night")
-      }
-    >
-      <Segment
-        inverted={dark}
-        className={dark && !susExpanded && "segment-bottom"}
-      >
-        <Icon
-          name={susExpanded ? "caret down" : "caret right"}
-          onClick={() => setSusExpanded(!susExpanded)}
-        />
-        sustainability 🍃
-      </Segment>
-      {susExpanded && sustainableContent}
-      <Segment
-        inverted={dark}
+  const resourceSection = (
+    <>
+      <h3 align="center">resources 🌐</h3>
+      <Segment.Group
+        size="large"
         className={
           dark &&
-          ((minExpanded && susExpanded && "segment-top") ||
-            (!minExpanded && susExpanded && "segment-top segment-bottom") ||
-            (!minExpanded && !susExpanded && "segment-bottom"))
+          ((homeExpanded && "segment-group-night segment-bottom") ||
+            "segment-group-night")
         }
       >
-        <Icon
-          name={minExpanded ? "caret down" : "caret right"}
-          onClick={() => setMinExpanded(!minExpanded)}
-        />
-        minimalism 💼
-      </Segment>
-      {minExpanded && minimalistContent}
-      <Segment
-        inverted={dark}
-        className={
-          dark &&
-          ((agriExpanded && minExpanded && "segment-top") ||
-            (!agriExpanded && minExpanded && "segment-top segment-bottom") ||
-            (!agriExpanded && !minExpanded && "segment-bottom"))
-        }
-      >
-        <Icon
-          name={agriExpanded ? "caret down" : "caret right"}
-          onClick={() => setAgriExpanded(!agriExpanded)}
-        />
-        agriculture 🐮
-      </Segment>
-      {agriExpanded && agricultureContent}
-      <Segment
-        inverted={dark}
-        className={
-          dark &&
-          ((fashionExpanded && agriExpanded && "segment-top") ||
-            (!fashionExpanded &&
-              agriExpanded &&
-              "segment-top segment-bottom") ||
-            (!fashionExpanded && !agriExpanded && "segment-bottom"))
-        }
-      >
-        <Icon
-          name={fashionExpanded ? "caret down" : "caret right"}
-          onClick={() => setFashionExpanded(!fashionExpanded)}
-        />
-        fashion 👗
-      </Segment>
-      {fashionExpanded && fashionContent}
-      <Segment
-        inverted={dark}
-        className={
-          dark &&
-          ((homeExpanded && fashionExpanded && "segment-top") ||
-            (!homeExpanded &&
-              fashionExpanded &&
-              "segment-top segment-bottom") ||
-            (!homeExpanded && !fashionExpanded && "segment-bottom"))
-        }
-      >
-        <Icon
-          name={homeExpanded ? "caret down" : "caret right"}
-          onClick={() => setHomeExpanded(!homeExpanded)}
-        />
-        home 🏠
-      </Segment>
-      {homeExpanded && homeContent}
-    </Segment.Group>
+        <Segment
+          inverted={dark}
+          className={dark && !susExpanded && "segment-bottom"}
+        >
+          <Icon
+            name={susExpanded ? "caret down" : "caret right"}
+            onClick={() => setSusExpanded(!susExpanded)}
+          />
+          sustainability 🍃
+        </Segment>
+        {susExpanded && sustainableContent}
+        <Segment
+          inverted={dark}
+          className={
+            dark &&
+            ((minExpanded && susExpanded && "segment-top") ||
+              (!minExpanded && susExpanded && "segment-top segment-bottom") ||
+              (!minExpanded && !susExpanded && "segment-bottom"))
+          }
+        >
+          <Icon
+            name={minExpanded ? "caret down" : "caret right"}
+            onClick={() => setMinExpanded(!minExpanded)}
+          />
+          minimalism 💼
+        </Segment>
+        {minExpanded && minimalistContent}
+        <Segment
+          inverted={dark}
+          className={
+            dark &&
+            ((agriExpanded && minExpanded && "segment-top") ||
+              (!agriExpanded && minExpanded && "segment-top segment-bottom") ||
+              (!agriExpanded && !minExpanded && "segment-bottom"))
+          }
+        >
+          <Icon
+            name={agriExpanded ? "caret down" : "caret right"}
+            onClick={() => setAgriExpanded(!agriExpanded)}
+          />
+          agriculture 🐮
+        </Segment>
+        {agriExpanded && agricultureContent}
+        <Segment
+          inverted={dark}
+          className={
+            dark &&
+            ((fashionExpanded && agriExpanded && "segment-top") ||
+              (!fashionExpanded &&
+                agriExpanded &&
+                "segment-top segment-bottom") ||
+              (!fashionExpanded && !agriExpanded && "segment-bottom"))
+          }
+        >
+          <Icon
+            name={fashionExpanded ? "caret down" : "caret right"}
+            onClick={() => setFashionExpanded(!fashionExpanded)}
+          />
+          fashion 👗
+        </Segment>
+        {fashionExpanded && fashionContent}
+        <Segment
+          inverted={dark}
+          className={
+            dark &&
+            ((homeExpanded && fashionExpanded && "segment-top") ||
+              (!homeExpanded &&
+                fashionExpanded &&
+                "segment-top segment-bottom") ||
+              (!homeExpanded && !fashionExpanded && "segment-bottom"))
+          }
+        >
+          <Icon
+            name={homeExpanded ? "caret down" : "caret right"}
+            onClick={() => setHomeExpanded(!homeExpanded)}
+          />
+          home 🏠
+        </Segment>
+        {homeExpanded && homeContent}
+      </Segment.Group>
+    </>
+  );
+
+  const blogSection = (
+    <Container text className="sus-post">
+      <h3 align="center">blog ✏️</h3>
+      {blogPosts.map(post => (
+        <Segment
+          className={dark && "segment-group-night segment-bottom"}
+          inverted={dark}
+        >
+          <p className="med-text">{post}</p>
+        </Segment>
+      ))}
+    </Container>
   );
 
   const web = (
@@ -179,23 +196,8 @@ export default function Sustainability(props) {
       <div className="grid-container">
         <Grid>
           <Grid.Row columns={2}>
-            <Grid.Column width={5}>
-              <h3 align="center">resources 🌐</h3>
-              {baseSegments}
-            </Grid.Column>
-            <Grid.Column width={11}>
-              <Container text className="sus-post">
-                <h3 align="center">blog ✏️</h3>
-                {blogPosts.map(post => (
-                  <Segment
-                    className={dark && "segment-group-night segment-bottom"}
-                    inverted={dark}
-                  >
-                    <p className="med-text">{post}</p>
-                  </Segment>
-                ))}
-              </Container>
-            </Grid.Column>
+            <Grid.Column width={5}>{resourceSection}</Grid.Column>
+            <Grid.Column width={11}>{blogSection}</Grid.Column>
           </Grid.Row>
         </Grid>
       </div>
@@ -204,14 +206,8 @@ export default function Sustainability(props) {
 
   const mobile = (
     <>
-      <h3 align="center">resources 🌐</h3>
-      {baseSegments}
-      <h3 align="center">blog ✏️</h3>
-      {blogPosts.map(post => (
-        <Segment>
-          <p className="med-text">{post}</p>
-        </Segment>
-      ))}
+      {resourceSection}
+      {blogSection}
     </>
   );
 
