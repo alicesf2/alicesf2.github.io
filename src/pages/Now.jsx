@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Accordion, Container, Grid, Icon, Segment } from "semantic-ui-react";
+import { Container, Grid, Icon, Segment } from "semantic-ui-react";
 import {
   learningPanels,
   devPanels,
@@ -26,7 +26,7 @@ export default function Now(props) {
   const learningContent = (
     <Segment.Group className={dark && "segment-group-night"}>
       {learningPanels.map(panel => (
-        <Segment inverted={dark}>
+        <Segment className={dark && "segment-bottom"} inverted={dark}>
           <h3>{panel.title}</h3>
           {panel.content}
         </Segment>
@@ -37,7 +37,7 @@ export default function Now(props) {
   const developingContent = (
     <Segment.Group className={dark && "segment-group-night"}>
       {devPanels.map(panel => (
-        <Segment inverted={dark}>
+        <Segment className={dark && "segment-bottom"} inverted={dark}>
           <h3>{panel.title}</h3>
           {panel.content}
         </Segment>
@@ -48,7 +48,7 @@ export default function Now(props) {
   const readingContent = (
     <Segment.Group className={dark && "segment-group-night"}>
       {readPanels.map(panel => (
-        <Segment inverted={dark}>
+        <Segment className={dark && "segment-bottom"} inverted={dark}>
           <h3>{panel.title}</h3>
           {panel.content}
         </Segment>
@@ -59,7 +59,7 @@ export default function Now(props) {
   const watchingContent = (
     <Segment.Group className={dark && "segment-group-night"}>
       {watchPanels.map(panel => (
-        <Segment inverted={dark}>
+        <Segment className={dark && "segment-bottom"} inverted={dark}>
           <h3>{panel.title}</h3>
           {panel.content}
         </Segment>
@@ -70,7 +70,7 @@ export default function Now(props) {
   const listeningContent = (
     <Segment.Group className={dark && "segment-group-night"}>
       {listenPanels.map(panel => (
-        <Segment inverted={dark}>
+        <Segment className={dark && "segment-bottom"} inverted={dark}>
           <h3>{panel.title}</h3>
           {panel.content}
         </Segment>
@@ -79,8 +79,18 @@ export default function Now(props) {
   );
 
   const baseSegments = (
-    <Segment.Group size="large" className={dark && "segment-group-night"}>
-      <Segment inverted={dark}>
+    <Segment.Group
+      size="large"
+      className={
+        dark &&
+        ((listeningExpanded && "segment-group-night segment-bottom") ||
+          "segment-group-night")
+      }
+    >
+      <Segment
+        className={dark && !learningExpanded && "segment-bottom"}
+        inverted={dark}
+      >
         <Icon
           name={learningExpanded ? "caret down" : "caret right"}
           onClick={() => setLearningExpanded(!learningExpanded)}
@@ -88,7 +98,17 @@ export default function Now(props) {
         learning 🧠
       </Segment>
       {learningExpanded && learningContent}
-      <Segment inverted={dark}>
+      <Segment
+        className={
+          dark &&
+          ((developingExpanded && learningExpanded && "segment-top") ||
+            (!developingExpanded &&
+              learningExpanded &&
+              "segment-top segment-bottom") ||
+            (!developingExpanded && !learningExpanded && "segment-bottom"))
+        }
+        inverted={dark}
+      >
         <Icon
           name={developingExpanded ? "caret down" : "caret right"}
           onClick={() => setDevelopingExpanded(!developingExpanded)}
@@ -96,7 +116,17 @@ export default function Now(props) {
         developing 👩🏻‍💻
       </Segment>
       {developingExpanded && developingContent}
-      <Segment inverted={dark}>
+      <Segment
+        className={
+          dark &&
+          ((readingExpanded && developingExpanded && "segment-top") ||
+            (!readingExpanded &&
+              developingExpanded &&
+              "segment-top segment-bottom") ||
+            (!readingExpanded && !developingExpanded && "segment-bottom"))
+        }
+        inverted={dark}
+      >
         <Icon
           name={readingExpanded ? "caret down" : "caret right"}
           onClick={() => setReadingExpanded(!readingExpanded)}
@@ -104,7 +134,17 @@ export default function Now(props) {
         reading 📚
       </Segment>
       {readingExpanded && readingContent}
-      <Segment inverted={dark}>
+      <Segment
+        className={
+          dark &&
+          ((watchingExpanded && readingExpanded && "segment-top") ||
+            (!watchingExpanded &&
+              readingExpanded &&
+              "segment-top segment-bottom") ||
+            (!watchingExpanded && !readingExpanded && "segment-bottom"))
+        }
+        inverted={dark}
+      >
         <Icon
           name={watchingExpanded ? "caret down" : "caret right"}
           onClick={() => setWatchingExpanded(!watchingExpanded)}
@@ -112,7 +152,17 @@ export default function Now(props) {
         watching 📺
       </Segment>
       {watchingExpanded && watchingContent}
-      <Segment inverted={dark}>
+      <Segment
+        className={
+          dark &&
+          ((listeningExpanded && watchingExpanded && "segment-top") ||
+            (!listeningExpanded &&
+              watchingExpanded &&
+              "segment-top segment-bottom") ||
+            (!listeningExpanded && !watchingExpanded && "segment-bottom"))
+        }
+        inverted={dark}
+      >
         <Icon
           name={listeningExpanded ? "caret down" : "caret right"}
           onClick={() => setListeningExpanded(!listeningExpanded)}
@@ -129,7 +179,7 @@ export default function Now(props) {
       <div className="segment-container">
         <Segment.Group size="medium" className={dark && "segment-group-night"}>
           {upcoming.map(event => (
-            <Segment inverted={dark}>
+            <Segment className={dark && "segment-bottom"} inverted={dark}>
               {event.href ? (
                 <a
                   className={dark ? "link-night" : "link-day"}

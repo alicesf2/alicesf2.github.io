@@ -17,7 +17,7 @@ export default function Nav(props) {
       <Menu
         size="large"
         inverted={dark}
-        className={dark && "segment-group-night"}
+        className={dark && "segment-group-night segment-bottom"}
       >
         <Menu.Item className={dark && "menu-night"}>
           {dark ? (

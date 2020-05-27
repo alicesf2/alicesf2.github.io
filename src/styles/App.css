@@ -129,7 +129,18 @@ li {
 }
 
 .segment-group-night {
-  border: 0.1rem solid white !important;
+  border-top: 0.1rem solid white !important;
+  border-right: 0.1rem solid white !important;
+  border-bottom: 0rem !important;
+  border-left: 0.1rem solid white !important;
+}
+
+.segment-bottom {
+  border-bottom: 0.1rem solid white !important;
+}
+
+.segment-top {
+  border-top: 0.1rem solid white !important;
 }
 
 .menu-night {
