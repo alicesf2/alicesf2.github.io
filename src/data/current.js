@@ -21,7 +21,7 @@ export const readPanels = [
     key: "lift",
     title: "the moment of lift 🚀",
     content:
-      "i want to feel more empowered as a woman and want to learn how to empower other women. a reminder that gender equity benefits all. recommended by sahi :)"
+      "i want to feel more empowered as a woman and want to learn how to empower other women. a reminder that gender equity benefits all. reading with sahi :)"
   }
 ];
 
