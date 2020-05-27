@@ -31,7 +31,7 @@ export default [
     href:
       "https://docs.google.com/presentation/d/1W9AWSHeae-_5JMq897ha9mAsfnph8W8P4fBlVf9Fdoc/edit?usp=sharing",
     description:
-      "5/3: gave a lightning talk with on ddr with alan. pleasantly surprised at how engaged people were. exposed alan's skills at the end 😂."
+      "5/3: gave a lightning talk on ddr with alan. pleasantly surprised at how engaged people were. exposed alan's skills at the end 😂."
   },
   {
     src: "4-24-26.png",
