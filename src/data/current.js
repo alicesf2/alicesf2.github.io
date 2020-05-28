@@ -42,6 +42,18 @@ export const watchPanels = [
 
 export const listenPanels = [
   {
+    key: "rome",
+    title: "the history of rome 🏛",
+    content:
+      "inspired by eric to learn more about history! spotify podcast by mike duncan."
+  },
+  {
+    key: "giorno",
+    title: "giorno's theme 🎸",
+    content:
+      "thanks sandra for randomly getting this stuck in my head even tho i never even watched the anime LOL"
+  },
+  {
     key: "feather",
     title: "feather 🦢",
     content:
@@ -51,11 +63,5 @@ export const listenPanels = [
     key: "bored",
     title: "bored in the house 🏠",
     content: "bored in the house and i'm in the house bored."
-  },
-  {
-    key: "giorno",
-    title: "giorno's theme 🎸",
-    content:
-      "thanks sandra for randomly getting this stuck in my head even tho i never even watched the anime LOL"
   }
 ];
