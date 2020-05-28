@@ -35,7 +35,7 @@ export default [
   },
   {
     src: "4-24-26.png",
-    href: "https://github.com/abehara2/openrooms",
+    href: "https://devpost.com/software/openrooms-85kv6n#updates",
     description:
       "4/24-4/26: created openrooms with ashank, gene, and zayyan. submitted to hack:now, a covid-focused hackathon hosted by calhacks. got a good view of steve wozniack's nose hair 👃. learned that deploying is hard :c."
   }
