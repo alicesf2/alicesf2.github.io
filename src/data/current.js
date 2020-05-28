@@ -51,5 +51,11 @@ export const listenPanels = [
     key: "bored",
     title: "bored in the house 🏠",
     content: "bored in the house and i'm in the house bored."
+  },
+  {
+    key: "giorno",
+    title: "giorno's theme 🎸",
+    content:
+      "thanks sandra for randomly getting this stuck in my head even tho i never even watched the anime LOL"
   }
 ];
