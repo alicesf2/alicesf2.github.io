@@ -31,7 +31,11 @@ export default function Achievements(props) {
                 src={require(`../assets/achievements/${achievement.src}`)}
               />
             )}
-            <Card.Content>{achievement.description}</Card.Content>
+            <Card.Content>
+              {achievement.description.split("\n").map(desc => (
+                <p>{desc}</p>
+              ))}
+            </Card.Content>
           </Card>
         ))}
       </StackGrid>

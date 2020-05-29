@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Now from "./pages/Now";
 import Achievements from "./pages/Achievements";
 import Sustainability from "./pages/Sustainability";
+import Music from "./pages/Music";
 import Mems from "./pages/Mems";
 import Nav from "./components/Nav";
 
@@ -49,6 +50,11 @@ export default function App() {
             exact
             path="/sustainability"
             render={props => <Sustainability {...props} dark={dark} />}
+          />
+          <Route
+            exact
+            path="/music"
+            render={props => <Music {...props} dark={dark} />}
           />
           <Route
             exact

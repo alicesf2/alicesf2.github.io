@@ -1,11 +1,9 @@
 import React from "react";
 import { Image } from "semantic-ui-react";
 
-export default function Home(props) {
-  const { dark } = props;
-
+export default function Home() {
   return (
-    <div className={dark && "background-dark"}>
+    <>
       <div className="profile-container">
         <Image src={require("../assets/mems/me.jpg")} size="medium" circular />
       </div>
@@ -14,6 +12,6 @@ export default function Home(props) {
         do with what there is.”
       </p>
       <p className="quote-author">- Ernest Hemmingway</p>
-    </div>
+    </>
   );
 }

@@ -1,5 +1,17 @@
 export default [
   {
+    src: "5-28.png",
+    description: `5/28: attended dockercon with angad and josh 🐳 \n 
+      talks attended: \n 
+      - how to get started with docker \n 
+      - how to build and run node apps with docker compose \n 
+      - innovation happens best in open collaboration \n 
+      - interview with amanda silver, microsoft \n 
+      - become a docker power user with vscode \n 
+      - predicting space weather with docker \n 
+      - dockerizing health: helping us treat childhood cancer`
+  },
+  {
     description:
       "5/24: managed to lift my gpa from the depths of despair 😭. thank you canceled exams, relaxed grading policies, and boredom pushing me to study more!!"
   },
