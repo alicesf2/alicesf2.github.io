@@ -1,5 +1,25 @@
 export const may = [
   {
+    src: "5-29-3.png",
+    caption: "5/29: more iroh"
+  },
+  {
+    src: "5-29-2.png",
+    caption: "5/29: too much iroh"
+  },
+  {
+    src: "5-29-1.png",
+    caption: "5/29: one of amy's many hairstyles"
+  },
+  {
+    src: "5-29.png",
+    caption: "5/29: sokka falling"
+  },
+  {
+    src: "5-28.png",
+    caption: "5/28: docker's perfectly timed update"
+  },
+  {
     src: "5-27-1.jpg",
     caption: "5/27: we are not flexible"
   },
