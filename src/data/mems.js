@@ -1,5 +1,30 @@
 export const may = [
   {
+    src: "6-1.png",
+    caption:
+      "6/1: classtranscribe research kickoff. angrave does not disappoint"
+  },
+  {
+    src: "5-31-1.jpg",
+    caption: "5/31: towing a car looks hard"
+  },
+  {
+    src: "5-31.jpg",
+    caption: "5/31: chillin in the parking lot cuz my car died :')"
+  },
+  {
+    src: "5-30-2.jpg",
+    caption: "5/30: lazy bums"
+  },
+  {
+    src: "5-30-1.jpg",
+    caption: "5/30: a lovely sunny day ☀️"
+  },
+  {
+    src: "5-30.jpg",
+    caption: "5/30: social distance picnic w/amy & hannah"
+  },
+  {
     src: "5-29-3.png",
     caption: "5/29: more iroh"
   },
