@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, List } from "semantic-ui-react";
+import { Card, Image } from "semantic-ui-react";
 import StackGrid from "react-stack-grid";
 import musicLinks from "../data/music";
 
@@ -12,8 +12,8 @@ export default function Music(props) {
         me playing instruments i used to be good at 🎹
       </p>
       <p align="center">
-        *sorry for the shitty sound quality on some of the flute parts i will
-        get a real mic sometime*
+        *click on each image below to view the google drive video. also volume
+        up pls ⏫ *
       </p>
       <StackGrid
         monitorImagesLoaded={true}
@@ -25,19 +25,25 @@ export default function Music(props) {
       >
         {musicLinks.map(link => (
           <Card className={dark ? "card-dark caption" : "caption"} raised>
-            <Card.Content>
-              <Card.Header>
-                <a
-                  className={dark ? "link-night" : "link-day"}
-                  href={link.href}
-                  target="_blank"
-                >
-                  {link.header}
-                </a>
-              </Card.Header>
-              <p className="card-meta">{link.meta}</p>
-              <p>{link.description}</p>
-            </Card.Content>
+            <Image
+              src={require(`../assets/music/${link.image}`)}
+              href={link.href}
+              target="_blank"
+            />
+            <p className="card-header">
+              <b>{link.header}</b>
+            </p>
+            <p className="card-meta">{link.meta}</p>
+            <p className="card-desc">{link.description}</p>
+            <p className="card-extra">
+              <a
+                className={dark ? "link-night" : "link-day"}
+                href={link.href2}
+                target="_blank"
+              >
+                original song ({link.time})
+              </a>
+            </p>
           </Card>
         ))}
       </StackGrid>
