@@ -11,10 +11,7 @@ export default function Music(props) {
       <p className="page-header">
         me playing instruments i used to be good at 🎹
       </p>
-      <p align="center">
-        *click on each image below to view the google drive video. also volume
-        up pls ⏫ *
-      </p>
+      <p align="center">*volume up pls ⬆️ *</p>
       <StackGrid
         monitorImagesLoaded={true}
         columnWidth={250}
@@ -25,11 +22,7 @@ export default function Music(props) {
       >
         {musicLinks.map(link => (
           <Card className={dark ? "card-dark caption" : "caption"} raised>
-            <Image
-              src={require(`../assets/music/${link.image}`)}
-              href={link.href}
-              target="_blank"
-            />
+            <iframe src={link.href} allowFullScreen></iframe>
             <p className="card-header">
               <b>{link.header}</b>
             </p>

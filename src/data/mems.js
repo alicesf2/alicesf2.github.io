@@ -1,9 +1,24 @@
-export const may = [
+export const june = [
+  {
+    src: "6-3-2.png",
+    caption:
+      "6/3: the worst escape room ever but lowkey looking fwd to sherlock the musical!!"
+  },
+  {
+    src: "6-3-1.png",
+    caption: "6/3: classic uwu faces"
+  },
+  {
+    src: "6-3.jpg",
+    caption: "6/3: eating croissants in sandy's backyard 🥐"
+  },
   {
     src: "6-1.png",
     caption:
       "6/1: classtranscribe research kickoff. angrave does not disappoint"
-  },
+  }
+];
+export const may = [
   {
     src: "5-31-1.jpg",
     caption: "5/31: towing a car looks hard"
