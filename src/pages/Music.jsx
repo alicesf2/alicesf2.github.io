@@ -36,6 +36,8 @@ export default function Music(props) {
               >
                 original song ({link.time})
               </a>
+              <br />
+              difficulty: {link.difficulty}
             </p>
           </Card>
         ))}

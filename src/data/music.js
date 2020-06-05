@@ -7,7 +7,8 @@ export default [
     href2: "https://www.youtube.com/watch?v=sdxaNeRn1GA",
     time: "0:04-1:11",
     description: `6/2: my fav anime opening ❤️ it just makes me feel like i can take 
-        down anything in my way 🔥. painful to play on the flute tho.`
+        down anything in my way 🔥. painful to play on the flute tho.`,
+    difficulty: "⭐️⭐️⭐️⭐️"
   },
   {
     header: "again",
@@ -17,7 +18,8 @@ export default [
     href2: "https://www.youtube.com/watch?v=2DYYVp4QXew",
     time: "0:00-1:25",
     description: `6/2: one of the best anime in existence (brotherhood, ofc). was really feelin this song 
-    after watching cultural's wotagei dance.`
+    after watching cultural's wotagei dance.`,
+    difficulty: "⭐️⭐️⭐️"
   },
   {
     header: "danzon no. 2",
@@ -28,7 +30,8 @@ export default [
     time: "4:21-5:37",
     description: `6/1: my fav song from my 8 years of band. this part was my piano 
         solo :) the flute part sounds way better on the violin but i think it 
-        still turned out pretty well, even with my shitty transitions. `
+        still turned out pretty well, even with my shitty transitions. `,
+    difficulty: "⭐️⭐️⭐️⭐️"
   },
   {
     header: "sadness and sorrow",
@@ -38,7 +41,8 @@ export default [
     href2: "https://www.youtube.com/watch?v=wEWF2xh5E8s",
     time: "0:23-1:36",
     description: `6/1: the classic naruto sad song 😭. this one always gets the feels 
-          goin. might do this one on the bamboo flute too. peep my mom in the background.`
+          goin. might do this one on the bamboo flute too. peep my mom in the background.`,
+    difficulty: "⭐️"
   },
   {
     header: "the raising fighting spirit",
@@ -48,7 +52,8 @@ export default [
     href2: "https://www.youtube.com/watch?v=mjjkHg5FOhk",
     time: "0:00-1:15",
     description: `5/31: the classic naruto fight song 🥊. one of the only fight songs that 
-        has a badass flute solo. might redo this one once i find my sister's bamboo flute.`
+        has a badass flute solo. might redo this one once i find my sister's bamboo flute.`,
+    difficulty: "⭐️⭐️⭐️"
   },
   {
     header: "think of me",
@@ -58,6 +63,7 @@ export default [
     href2: "https://www.youtube.com/watch?v=XfTgCPUJwRk",
     time: "0:00-0:41",
     description: `5/31: think of me on piano and flute. one of my fav songs from one of 
-    my fav musicals. this was also jumei's orch solo part 😊`
+    my fav musicals. this was also jumei's orch solo part 😊`,
+    difficulty: "⭐️⭐️"
   }
 ];
