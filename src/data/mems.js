@@ -64,6 +64,15 @@ export const june = [
     caption: "6/3: eating croissants in sandy's backyard 🥐"
   },
   {
+    src: "6-2-1.jpg",
+    caption:
+      "6/2: how i feel after spending an hour helping jumei pick what to uber eats 🍗"
+  },
+  {
+    src: "6-2.jpg",
+    caption: "6/2: a most flattering pic of me thanks jumei"
+  },
+  {
     src: "6-1.png",
     caption:
       "6/1: classtranscribe research kickoff. angrave does not disappoint"
