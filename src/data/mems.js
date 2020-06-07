@@ -1,5 +1,47 @@
 export const june = [
   {
+    src: "6-6-1.png",
+    caption:
+      "6/6: #uiuc-bored-games hanabi (recommended by aria.) pretty complex but really good for teamwork :)"
+  },
+  {
+    src: "6-6.png",
+    caption: "6/6: #uiuc-bored-games wiki game (i won this round heheheh)"
+  },
+  {
+    src: "6-5-3.png",
+    caption: "6/5: aang's detached arms"
+  },
+  {
+    src: "6-5-2.png",
+    caption: "6/5: zuko's tea-drenched hair"
+  },
+  {
+    src: "6-5-1.png",
+    caption: "6/5: aang's classic face"
+  },
+  {
+    src: "6-5.png",
+    caption: "6/5: aang drinking water tribe soup"
+  },
+  {
+    src: "6-4-2.jpg",
+    caption: "6/4: bingo stole my spot :("
+  },
+  {
+    src: "6-4-1.jpg",
+    caption: "6/4: can u tell which ones are mine"
+  },
+  {
+    src: "6-4.jpg",
+    caption: "6/4: made dumps w/sandy 🥟"
+  },
+  {
+    src: "6-3-3.png",
+    caption:
+      "6/3: playing pokemon w/sandy like the good ol' days, except double screen-sharing on messenger and using an emulator instead of a ds. pokemon platinum is very meta 😂"
+  },
+  {
     src: "6-3-2.png",
     caption:
       "6/3: the worst escape room ever but lowkey looking fwd to sherlock the musical!!"
@@ -7,6 +49,15 @@ export const june = [
   {
     src: "6-3-1.png",
     caption: "6/3: classic uwu faces"
+  },
+  {
+    src: "6-3-5.jpg",
+    caption: "6/3: summer vibes 🍌"
+  },
+  {
+    src: "6-3-4.jpg",
+    caption:
+      "6/3: me watching sandy screenshare pokemon platinum while i'm sitting 6 ft away from her"
   },
   {
     src: "6-3.jpg",
