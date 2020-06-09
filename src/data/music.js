@@ -1,5 +1,16 @@
 export default [
   {
+    header: "giorno's theme",
+    meta: "jojo's bizarre adventure 🕺🏻",
+    href:
+      "https://drive.google.com/file/d/1WanAELjlGx-LfU0HJQZyEoW7jaO4ffFD/preview",
+    href2: "https://www.youtube.com/watch?v=Kf26tsytY6o",
+    time: "0:00-1:41",
+    description:
+      "6/3-6/8: i didn't even watch this anime but sandra got this song stuck in my head so i had to play it",
+    difficulty: "⭐️⭐️⭐️⭐️",
+  },
+  {
     header: "guren no yumiya",
     meta: "attack on titan 🔰",
     href:
@@ -8,7 +19,7 @@ export default [
     time: "0:04-1:11",
     description: `6/2: my fav anime opening ❤️ it just makes me feel like i can take 
         down anything in my way 🔥. painful to play on the flute tho.`,
-    difficulty: "⭐️⭐️⭐️⭐️"
+    difficulty: "⭐️⭐️⭐️⭐️",
   },
   {
     header: "again",
@@ -19,7 +30,7 @@ export default [
     time: "0:00-1:25",
     description: `6/2: one of the best anime in existence (brotherhood, ofc). was really feelin this song 
     after watching cultural's wotagei dance.`,
-    difficulty: "⭐️⭐️⭐️"
+    difficulty: "⭐️⭐️⭐️",
   },
   {
     header: "danzon no. 2",
@@ -31,7 +42,7 @@ export default [
     description: `6/1: my fav song from my 8 years of band. this part was my piano 
         solo :) the flute part sounds way better on the violin but i think it 
         still turned out pretty well, even with my shitty transitions. `,
-    difficulty: "⭐️⭐️⭐️⭐️"
+    difficulty: "⭐️⭐️⭐️⭐️",
   },
   {
     header: "sadness and sorrow",
@@ -42,7 +53,7 @@ export default [
     time: "0:23-1:36",
     description: `6/1: the classic naruto sad song 😭. this one always gets the feels 
           goin. might do this one on the bamboo flute too. peep my mom in the background.`,
-    difficulty: "⭐️"
+    difficulty: "⭐️",
   },
   {
     header: "the raising fighting spirit",
@@ -53,7 +64,7 @@ export default [
     time: "0:00-1:15",
     description: `5/31: the classic naruto fight song 🥊. one of the only fight songs that 
         has a badass flute solo. might redo this one once i find my sister's bamboo flute.`,
-    difficulty: "⭐️⭐️⭐️"
+    difficulty: "⭐️⭐️⭐️",
   },
   {
     header: "think of me",
@@ -64,6 +75,6 @@ export default [
     time: "0:00-0:41",
     description: `5/31: think of me on piano and flute. one of my fav songs from one of 
     my fav musicals. this was also jumei's orch solo part 😊`,
-    difficulty: "⭐️⭐️"
-  }
+    difficulty: "⭐️⭐️",
+  },
 ];
