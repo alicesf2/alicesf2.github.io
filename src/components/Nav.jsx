@@ -51,6 +51,11 @@ export default function Nav(props) {
           </Link>
         </Menu.Item>
         <Menu.Item className={dark && "menu-night"}>
+          <Link className="nav-link" to="/avatar">
+            avatar
+          </Link>
+        </Menu.Item>
+        <Menu.Item className={dark && "menu-night"}>
           <Link className="nav-link" to="/mems">
             mems
           </Link>
@@ -110,6 +115,14 @@ export default function Nav(props) {
               to="/music"
             >
               music
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={dark ? "nav-link-mobile-night" : "nav-link-mobile"}
+              to="/avatar"
+            >
+              avatar
             </Link>
           </li>
           <li>

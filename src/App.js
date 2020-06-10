@@ -7,6 +7,7 @@ import Now from "./pages/Now";
 import Achievements from "./pages/Achievements";
 import Sustainability from "./pages/Sustainability";
 import Music from "./pages/Music";
+import Avatar from "./pages/Avatar";
 import Mems from "./pages/Mems";
 import Nav from "./components/Nav";
 
@@ -18,7 +19,7 @@ export default function App() {
       <Container className="page-wrapper">
         <Nav
           dark={dark}
-          setDark={darkParam => {
+          setDark={(darkParam) => {
             setDark(darkParam);
             if (dark) {
               document.body.style.backgroundColor = "white";
@@ -34,32 +35,37 @@ export default function App() {
           <Route
             exact
             path="/"
-            render={props => <Home {...props} dark={dark} />}
+            render={(props) => <Home {...props} dark={dark} />}
           />
           <Route
             exact
             path="/now"
-            render={props => <Now {...props} dark={dark} />}
+            render={(props) => <Now {...props} dark={dark} />}
           />
           <Route
             exact
             path="/achievements"
-            render={props => <Achievements {...props} dark={dark} />}
+            render={(props) => <Achievements {...props} dark={dark} />}
           />
           <Route
             exact
             path="/sustainability"
-            render={props => <Sustainability {...props} dark={dark} />}
+            render={(props) => <Sustainability {...props} dark={dark} />}
           />
           <Route
             exact
             path="/music"
-            render={props => <Music {...props} dark={dark} />}
+            render={(props) => <Music {...props} dark={dark} />}
+          />
+          <Route
+            exact
+            path="/avatar"
+            render={(props) => <Avatar {...props} dark={dark} />}
           />
           <Route
             exact
             path="/mems"
-            render={props => <Mems {...props} dark={dark} />}
+            render={(props) => <Mems {...props} dark={dark} />}
           />
         </Switch>
       </Container>
