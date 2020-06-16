@@ -1,5 +1,25 @@
 export default [
   {
+    src: "6-12-1.png",
+    caption: "6/12: toph is a baddie once again",
+  },
+  {
+    src: "6-12.png",
+    caption: "6/12: aang-choo",
+  },
+  {
+    src: "6-11.png",
+    caption: "6/11: aang lookin like a fire nation monkey",
+  },
+  {
+    src: "6-10-1.png",
+    caption: "6/10: the YEETING of sokka",
+  },
+  {
+    src: "6-10.png",
+    caption: "6/10: AANGRY",
+  },
+  {
     src: "6-9-3.png",
     caption: "6/9: sokka on drugs",
   },
@@ -54,6 +74,14 @@ export default [
   {
     src: "5-29.png",
     caption: "5/29: sokka falling",
+  },
+  {
+    src: "5-24-1.png",
+    caption: "5/24: aang sleepy",
+  },
+  {
+    src: "5-24.png",
+    caption: "aang splits",
   },
   { src: "5-22-6.png", caption: "5/22: 😧" },
   { src: "5-22-5.png", caption: "5/22: sorry 😗" },

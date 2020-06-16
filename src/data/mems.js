@@ -1,5 +1,56 @@
 export const june = [
   {
+    src: "6-15.png",
+    caption: `6/15: eric requested control of my comp thru zoom and grepped the 
+      terminal to help me find my lost pics on my hard drive...if this isn't 
+      the most cs thing ever idk what is 🧠`,
+  },
+  {
+    src: "6-15-2.jpg",
+    caption: `6/15: me watching hammy drink water feat my hand not knowing where the 
+    front camera is`,
+  },
+  {
+    src: "6-15-1.jpg",
+    caption: `6/15: sister: "i look like grandma"`,
+  },
+  {
+    src: "6-14-1.jpg",
+    caption: "6/14: annie made me a matcha latte 💚 I MISS BREW 🍵",
+  },
+  {
+    src: "6-14.jpg",
+    caption: "6/14: picnic & cards w/uwu 🍕",
+  },
+  {
+    src: "6-13-2.png",
+    caption: "6/13: #ubg: hanabi part 2",
+  },
+  {
+    src: "6-13-1.png",
+    caption: "6/13: #ubg: so close :')",
+  },
+  {
+    src: "6-13.png",
+    caption: "6/13: #ubg: chiuwu forever",
+  },
+  {
+    src: "6-12.png",
+    caption: "6/12: bad audio also -> good candids",
+  },
+  {
+    src: "6-11.jpg",
+    caption: "6/11: 🤔",
+  },
+  {
+    src: "6-10-1.png",
+    caption: "6/10: an actual nice pic of uwu",
+  },
+  {
+    src: "6-10.png",
+    caption: "6/10: bad wifi -> good candids",
+  },
+  {
     src: "6-9.jpg",
     caption: "6/9: hannah and i being ugly as usual",
   },
