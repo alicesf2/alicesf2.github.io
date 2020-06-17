@@ -1,20 +1,16 @@
 export default [
   {
-    name: "5/25: h4i summer projects 🍉"
+    name: "6/18-6/19: jsnation 🌐",
+    href: "https://live.jsnation.com",
   },
   {
-    name: "5/28: dockercon 🐳",
-    href: "https://docker.names.cube365.net/docker/dockercon"
+    name: "6/22: wwdc 🍎",
+    href: "https://developer.apple.com/wwdc20/",
   },
   {
-    name: "5/30-5/31: spaceapps hackathon 🚀",
-    href: "https://covid19.spaceappschallenge.org/"
+    name: "7/6-8/7: jpmorgan chase internship 💰",
   },
   {
-    name: "6/8-6/12: wit conference 👩🏻‍💻",
-    href: "https://womenimpacttech.com/wit-connect"
+    name: "7/15: jpmc talk w/jamie dimon 👨🏼‍💼",
   },
-  {
-    name: "7/6: jpmorgan chase internship 💰"
-  }
 ];

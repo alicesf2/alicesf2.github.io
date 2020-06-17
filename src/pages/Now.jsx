@@ -2,16 +2,18 @@ import React, { useEffect, useState } from "react";
 import { Container, Grid, Icon, Segment } from "semantic-ui-react";
 import {
   learningPanels,
+  teachingPanels,
   devPanels,
   readPanels,
   watchPanels,
-  listenPanels
+  listenPanels,
 } from "../data/current";
 import upcoming from "../data/upcoming.js";
 
 export default function Now(props) {
   const [width, setWidth] = useState(window.innerWidth);
   const [learningExpanded, setLearningExpanded] = useState(false);
+  const [teachingExpanded, setTeachingExpanded] = useState(false);
   const [developingExpanded, setDevelopingExpanded] = useState(false);
   const [readingExpanded, setReadingExpanded] = useState(false);
   const [watchingExpanded, setWatchingExpanded] = useState(false);
@@ -25,7 +27,18 @@ export default function Now(props) {
 
   const learningContent = (
     <Segment.Group className={dark && "segment-group-night"}>
-      {learningPanels.map(panel => (
+      {learningPanels.map((panel) => (
+        <Segment className={dark && "segment-bottom"} inverted={dark}>
+          <h3>{panel.title}</h3>
+          {panel.content}
+        </Segment>
+      ))}
+    </Segment.Group>
+  );
+
+  const teachingContent = (
+    <Segment.Group className={dark && "segment-group-night"}>
+      {teachingPanels.map((panel) => (
         <Segment className={dark && "segment-bottom"} inverted={dark}>
           <h3>{panel.title}</h3>
           {panel.content}
@@ -36,7 +49,7 @@ export default function Now(props) {
 
   const developingContent = (
     <Segment.Group className={dark && "segment-group-night"}>
-      {devPanels.map(panel => (
+      {devPanels.map((panel) => (
         <Segment className={dark && "segment-bottom"} inverted={dark}>
           <h3>{panel.title}</h3>
           {panel.content}
@@ -47,7 +60,7 @@ export default function Now(props) {
 
   const readingContent = (
     <Segment.Group className={dark && "segment-group-night"}>
-      {readPanels.map(panel => (
+      {readPanels.map((panel) => (
         <Segment className={dark && "segment-bottom"} inverted={dark}>
           <h3>{panel.title}</h3>
           {panel.content}
@@ -58,7 +71,7 @@ export default function Now(props) {
 
   const watchingContent = (
     <Segment.Group className={dark && "segment-group-night"}>
-      {watchPanels.map(panel => (
+      {watchPanels.map((panel) => (
         <Segment className={dark && "segment-bottom"} inverted={dark}>
           <h3>{panel.title}</h3>
           {panel.content}
@@ -69,7 +82,7 @@ export default function Now(props) {
 
   const listeningContent = (
     <Segment.Group className={dark && "segment-group-night"}>
-      {listenPanels.map(panel => (
+      {listenPanels.map((panel) => (
         <Segment className={dark && "segment-bottom"} inverted={dark}>
           <h3>{panel.title}</h3>
           {panel.content}
@@ -101,11 +114,29 @@ export default function Now(props) {
       <Segment
         className={
           dark &&
-          ((developingExpanded && learningExpanded && "segment-top") ||
-            (!developingExpanded &&
+          ((teachingExpanded && learningExpanded && "segment-top") ||
+            (!teachingExpanded &&
               learningExpanded &&
               "segment-top segment-bottom") ||
-            (!developingExpanded && !learningExpanded && "segment-bottom"))
+            (!teachingExpanded && !learningExpanded && "segment-bottom"))
+        }
+        inverted={dark}
+      >
+        <Icon
+          name={teachingExpanded ? "caret down" : "caret right"}
+          onClick={() => setTeachingExpanded(!teachingExpanded)}
+        />
+        teaching 👩🏻‍🏫
+      </Segment>
+      {teachingExpanded && teachingContent}
+      <Segment
+        className={
+          dark &&
+          ((developingExpanded && teachingExpanded && "segment-top") ||
+            (!developingExpanded &&
+              teachingExpanded &&
+              "segment-top segment-bottom") ||
+            (!developingExpanded && !teachingExpanded && "segment-bottom"))
         }
         inverted={dark}
       >
@@ -178,7 +209,7 @@ export default function Now(props) {
       <h3 align="center">events 📅</h3>
       <div className="segment-container">
         <Segment.Group size="medium" className={dark && "segment-group-night"}>
-          {upcoming.map(event => (
+          {upcoming.map((event) => (
             <Segment className={dark && "segment-bottom"} inverted={dark}>
               {event.href ? (
                 <a
