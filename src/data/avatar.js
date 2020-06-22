@@ -1,5 +1,21 @@
 export default [
   {
+    src: "6-20-3.png",
+    caption: "6/20: these filler eps getting wild",
+  },
+  {
+    src: "6-20-2.png",
+    caption: "6/20: i could go for a toph-style massage rn",
+  },
+  {
+    src: "6-20-1.png",
+    caption: "6/20: aang bouta eat a sheep",
+  },
+  {
+    src: "6-20.png",
+    caption: "6/20: reminds me of kakashi's mask ep",
+  },
+  {
     src: "6-12-1.png",
     caption: "6/12: toph is a baddie once again",
   },

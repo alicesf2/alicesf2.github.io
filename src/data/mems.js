@@ -1,5 +1,68 @@
 export const june = [
   {
+    src: "6-21-1.jpg",
+    caption: "6/21: happy father's day 👨🏻‍🔬",
+  },
+  {
+    src: "6-21.jpg",
+    caption:
+      "6/21: boiling tea bubbles in the park w/sandy - so many mems have been made here 🌳",
+  },
+  {
+    src: "6-20-6.png",
+    caption: "6/20: #ubg weeb shit",
+  },
+  {
+    src: "6-20-7.png",
+    caption: "6/20: #ubg best game ever",
+  },
+  {
+    src: "6-20-5.jpeg",
+    caption: "6/20: aang got nothin on me",
+  },
+  {
+    src: "6-20-4.jpeg",
+    caption:
+      "6/20: if milkcow goes under they'll have to go thru my entire wallet first",
+  },
+  {
+    src: "6-20-3.jpeg",
+    caption: "6/20: milkcow by the lake",
+  },
+  {
+    src: "6-20-2.jpeg",
+    caption: "6/20: asian squat game strong",
+  },
+  {
+    src: "6-20-1.jpg",
+    caption: "6/20: rendezvous @ century park :)",
+  },
+  {
+    src: "6-20.jpg",
+    caption:
+      "6/20: tillo's cheese fries but with 1/2 the cheese and a bowl of kimchi mayo ❓kinda fire tho",
+  },
+  {
+    src: "6-18.png",
+    caption: "6/18: we love stuffies",
+  },
+  {
+    src: "6-18.jpg",
+    caption: "6/18: ju w/my headphones",
+  },
+  {
+    src: "6-18-1.jpg",
+    caption: "6/18: so messenger calls now have virtual backgrounds",
+  },
+  {
+    src: "6-17-1.png",
+    caption: "6/17: annie no wanna be in pic :(",
+  },
+  {
+    src: "6-17.jpg",
+    caption: "6/17: smoosh 🐱",
+  },
+  {
     src: "6-15.png",
     caption: `6/15: eric requested control of my comp thru zoom and grepped the 
       terminal to help me find my lost pics on my hard drive...if this isn't 
