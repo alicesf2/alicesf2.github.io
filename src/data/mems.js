@@ -1,5 +1,25 @@
 export const june = [
   {
+    src: "6-28.png",
+    caption: "6/28: h4i coffee chat ☕️",
+  },
+  {
+    src: "6-26.jpeg",
+    caption: "6/26: coursera grind sesh",
+  },
+  {
+    src: "6-25.png",
+    caption: "6/25: yeet-haw more like see-saw",
+  },
+  {
+    src: "6-23.png",
+    caption: "6/23: rendezvous to rant",
+  },
+  {
+    src: "6-22.png",
+    caption: "6/22: escape room w/eric",
+  },
+  {
     src: "6-21-1.jpg",
     caption: "6/21: happy father's day 👨🏻‍🔬",
   },
