@@ -1,4 +1,4 @@
-export const june = [
+export const july = [
   {
     src: "7-4-3.png",
     caption: "7/4: but she turned around real quick",
@@ -16,11 +16,11 @@ export const june = [
     caption: "7/4: amy's fat fingies",
   },
   {
-    src: "7-3.png",
+    src: "7-3.jpg",
     caption: "7/3: h4i coffee chat w/jared ☕️",
   },
   {
-    src: "7-1-1.png",
+    src: "7-1-1.jpg",
     caption: "7/1: why do i have the worst candid pics i stg",
   },
   {
@@ -28,6 +28,9 @@ export const june = [
     caption:
       "7/1: UWU'S BDAY 🎂 got dem a matcha making set & played some beautiful tunes on my hulusi",
   },
+];
+
+export const june = [
   {
     src: "6-29.png",
     caption:

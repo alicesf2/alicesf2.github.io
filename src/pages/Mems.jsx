@@ -1,10 +1,29 @@
 import React from "react";
 import { Accordion, Card, Image } from "semantic-ui-react";
 import StackGrid from "react-stack-grid";
-import { march, april, may, june } from "../data/mems";
+import { march, april, may, june, july } from "../data/mems";
 
 export default function Mems(props) {
   const { dark } = props;
+
+  const julyMems = (
+    <StackGrid
+      monitorImagesLoaded={true}
+      columnWidth={250}
+      duration={0}
+      gutterWidth={10}
+      gutterHeight={10}
+      className="grid-container"
+    >
+      {july.map((mem) => (
+        <Card className={dark ? "card-dark caption" : "caption"} raised>
+          <Image src={require(`../assets/mems/${mem.src}`)} />
+          <Card.Content>{mem.caption}</Card.Content>
+        </Card>
+      ))}
+    </StackGrid>
+  );
+
   const juneMems = (
     <StackGrid
       monitorImagesLoaded={true}
@@ -14,7 +33,7 @@ export default function Mems(props) {
       gutterHeight={10}
       className="grid-container"
     >
-      {june.map(mem => (
+      {june.map((mem) => (
         <Card className={dark ? "card-dark caption" : "caption"} raised>
           <Image src={require(`../assets/mems/${mem.src}`)} />
           <Card.Content>{mem.caption}</Card.Content>
@@ -32,7 +51,7 @@ export default function Mems(props) {
       gutterHeight={10}
       className="grid-container"
     >
-      {may.map(mem => (
+      {may.map((mem) => (
         <Card className={dark ? "card-dark caption" : "caption"} raised>
           <Image src={require(`../assets/mems/${mem.src}`)} />
           <Card.Content>{mem.caption}</Card.Content>
@@ -50,7 +69,7 @@ export default function Mems(props) {
       gutterHeight={10}
       className="grid-container"
     >
-      {april.map(mem => (
+      {april.map((mem) => (
         <Card className={dark ? "card-dark caption" : "caption"} raised>
           <Image src={require(`../assets/mems/${mem.src}`)} />
           <Card.Content>{mem.caption}</Card.Content>
@@ -68,7 +87,7 @@ export default function Mems(props) {
       gutterHeight={10}
       className="grid-container"
     >
-      {march.map(mem => (
+      {march.map((mem) => (
         <Card className={dark ? "card-dark caption" : "caption"} raised>
           <Image src={require(`../assets/mems/${mem.src}`)} />
           <Card.Content>{mem.caption}</Card.Content>
@@ -79,25 +98,30 @@ export default function Mems(props) {
 
   const panels = [
     {
+      key: "jul",
+      title: "july 🍑",
+      content: { content: julyMems },
+    },
+    {
       key: "jun",
       title: "june 🍉",
-      content: { content: juneMems }
+      content: { content: juneMems },
     },
     {
       key: "may",
       title: "may 🌻",
-      content: { content: mayMems }
+      content: { content: mayMems },
     },
     {
       key: "apr",
       title: "april 🌸",
-      content: { content: aprilMems }
+      content: { content: aprilMems },
     },
     {
       key: "mar",
       title: "march ☘️",
-      content: { content: marchMems }
-    }
+      content: { content: marchMems },
+    },
   ];
 
   return (

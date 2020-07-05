@@ -1,5 +1,16 @@
 export default [
   {
+    header: "all star",
+    meta: "shrek 🧅",
+    href:
+      "https://drive.google.com/file/d/1RaOYCXLYgCXAgeIjLFv71QC3z1LVus4x/preview",
+    href2: "https://www.youtube.com/watch?v=L_jWHffIx5E",
+    time: "0:37-1:33",
+    description: `7/4: special request from julia mei. had to press the play button with my foot cuz the song starts before i can
+      position my hands and mouth correctly LOL`,
+    difficulty: "⭐️",
+  },
+  {
     header: "giorno's theme",
     meta: "jojo's bizarre adventure 🕺🏻",
     href:
@@ -7,7 +18,7 @@ export default [
     href2: "https://www.youtube.com/watch?v=Kf26tsytY6o",
     time: "0:00-1:41",
     description:
-      "6/3-6/8: i didn't even watch this anime but sandra got this song stuck in my head so i had to play it",
+      "6/8: i didn't even watch this anime but sandra got this song stuck in my head so i had to play it",
     difficulty: "⭐️⭐️⭐️⭐️",
   },
   {
