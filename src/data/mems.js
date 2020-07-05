@@ -1,7 +1,41 @@
 export const june = [
   {
+    src: "7-4-3.png",
+    caption: "7/4: but she turned around real quick",
+  },
+  {
+    src: "7-4-2.png",
+    caption: "7/4: #ubg sabelle got rekt in prashant's risktakers game",
+  },
+  {
+    src: "7-4-1.png",
+    caption: "7/4: #ubg mit game",
+  },
+  {
+    src: "7-4.png",
+    caption: "7/4: amy's fat fingies",
+  },
+  {
+    src: "7-3.png",
+    caption: "7/3: h4i coffee chat w/jared ☕️",
+  },
+  {
+    src: "7-1-1.png",
+    caption: "7/1: why do i have the worst candid pics i stg",
+  },
+  {
+    src: "7-1.png",
+    caption:
+      "7/1: UWU'S BDAY 🎂 got dem a matcha making set & played some beautiful tunes on my hulusi",
+  },
+  {
+    src: "6-29.png",
+    caption:
+      "6/29: played can't unsee w/eric, now i can't unsee how good i am at design",
+  },
+  {
     src: "6-28.png",
-    caption: "6/28: h4i coffee chat ☕️",
+    caption: "6/28: h4i coffee chat with albert and chaebin ☕️",
   },
   {
     src: "6-26.jpeg",

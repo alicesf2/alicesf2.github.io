@@ -33,6 +33,12 @@ export const devPanels = [
     currently working on dockerizing the db layer.`,
   },
   {
+    key: "fs",
+    title: "aaa fashion show website 💃",
+    content: `helping the new head coords develop a website to host info & resources about fashion show! finished replicating their
+      weebly site on the frontend, now working on connecting it to a database & admin login so they can update the content themselves.`,
+  },
+  {
     key: "blog",
     title: "this blog 🌻",
     content: `i'm also coding up and maintaining this blog as we speak LOL it's p jank
@@ -42,10 +48,10 @@ export const devPanels = [
 
 export const readPanels = [
   {
-    key: "lift",
-    title: "the moment of lift 🚀",
-    content:
-      "i want to feel more empowered as a woman and want to learn how to empower other women. a reminder that gender equity benefits all. reading with sahi :)",
+    key: "flow",
+    title: "flow 🌊",
+    content: `was tryna read this book last summer in sf but never got past the first chapter LMAO it's about the 
+        "psychology of optimal experience" and happiness`,
   },
 ];
 
@@ -57,11 +63,10 @@ export const watchPanels = [
       "i forgot how much i loved this show!! really glad it's popular on netflix now cuz it brings back old childhood memories of watching it on TV with sister fang :) and i used to fantasize about being able to bend the elements LOL maybe one day...",
   },
   {
-    key: "slowmoguys",
-    title: "the slow mo guys 👬",
-    content: `some of the most beautiful, breath-taking, and awe-inspiring moments happen 
-      in the blink of an eye. it's amazing to be able to capture these moments and 
-      see them clearly with the help of a super-fast, super-expensive camera.`,
+    key: "attack",
+    title: "attack on titan",
+    content: `season 1 is on netflix so figured i might as well rewatch the whole thing. it's actually a really realistic depiction
+      of politics, the military, religion, and corruption. would not recommend watching while eating LOL`,
   },
 ];
 
@@ -71,13 +76,6 @@ export const listenPanels = [
     title: "the history of rome 🏛",
     content:
       "inspired by eric to learn more about history! spotify podcast by mike duncan.",
-  },
-  {
-    key: "murder",
-    title: "my favorite murder 💀",
-    content: `recommended by julia! time to spoop myself out with real murder stories. 
-      but then again i used to watch criminal minds when i ate and before i went 
-      to sleep...so maybe i'll be ok.`,
   },
   {
     key: "angel",
