@@ -1,5 +1,13 @@
 export default [
   {
+    src: "7-3-1.png",
+    caption: "7/3: sokka & toph hanging on for dear life",
+  },
+  {
+    src: "7-3.png",
+    caption: "7/3: aang's nut dispenser",
+  },
+  {
     src: "6-20-3.png",
     caption: "6/20: these filler eps getting wild",
   },
